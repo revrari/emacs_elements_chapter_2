@@ -1,151 +1,151 @@
 #+title: Notes on the Ed
 #+options: \n:t
 
-The version of Ed I am using is Gnu Ed version 1.17\\
-Changes between versions\\
-Something has been lost\\
+The version of Ed I am using is Gnu Ed version 1.17\
+Changes between versions\
+Something has been lost\
 
 * LINE NUMBERS
 
-The 1st line is numbered 1\\
-The value of . is the current line\\
-$ is last line in the buffer\\
-To find a line containing text: /<regex>/ to search forwards\\
-and use ?<regex>? to search backwards\\
-One can use + or - to form an address:\\
-e.g. the following gives us context: -2,+2p\\
-This is equivalent to .-2,.+2 print\\
-Sequences of two or more addresses are separated either by "," or by ";".\\
+The 1st line is numbered 1\
+The value of . is the current line\
+$ is last line in the buffer\
+To find a line containing text: /<regex>/ to search forwards\
+and use ?<regex>? to search backwards\
+One can use + or - to form an address:\
+e.g. the following gives us context: -2,+2p\
+This is equivalent to .-2,.+2 print\
+Sequences of two or more addresses are separated either by "," or by ";".\
 
 * COMMANDS
 
-a = append\\
-c = change -- deletes the addressed line and replaces it with the input text\\
-d = delete -- deletes addressed lines\\
-e.g. 3,4d will delete lines 3-4\\
-s = substitues one regex for another\\
-e.g. s/the/their replaces "the" with "their"\\
-g = global search\\
-e.g. g/the/s//their/g\\
-i - insert text\\
-m = move text\\
-k + number = bookmarks an address\\
-' + letter = goes to bookmarked address\\
-q = quits Ed\\
-Q = quits Ed unconditionally\\
-p = prints lines\\
-The first line is numbered 1\\
-The last line is numbered $\\
-. stands for the current line\\
-Sequences of two or more addresses are separated either by "," or by ";"\\
--------\\
-a\\
-c\\
-d 1,3d\\
-s\\
-g/women/ s/women/woman/\\\
-s/the/the\\
-The above is the correct syntax for multiple substitutions\\
-The man told teh woman that she was beautiful\\
-Originally called QED\\
-Easy to use, hard to learn\\
-Authors: D. M. Ritchie and K. L. Thompson\\
-There are anumber of commands each of which is one character long.\\
-Each command is preceded by zero or more addresses\\
-n = prints the addressed lines\\
-e.g. 1,5n ; ,n\\
-P = toggles the command prompt on and off\\
-a=append\\
-specifying lines in the current buffer.\\
-Some commands are follwed by paramenters as well.\\
-Hence: ADDRESS | COMMAND | PARAMETER\\
-Regular expressions are a unique feature of QED.\\
-Used to search for text and/or replace it\\
-^ matches the null character at the beginning of a line\\
-$ matches the null character at the end of the line\\
-. matches any character except <nl>\\
-[<string>] matches any characters in the string and no others\\
-[^<string>] matches any character EXCEPT the characters in the string\\
-But one is better off using the v or V command\\
-For example: v/[A-Z]/ -- finds all lines that do not contain capital letters\\
-\* matches any number of occurances of adjacent text including zero - frequency\\
-| searches for alternatives\\
-Parentheses alter the ORDER of the regex\\
-No regular expression will match text spread across\\
-than one line.\\
-/ ... / sets the bounds of the regex\\
-\\
-For instance, there was a T command which could test a regular expression,\\
-which is not available in the GNU version.\\
-s/\<he\>/she\\
-P = shows the prompt\\
-n = prints line with line numbers\\
-The man told the woman she was beautiful.\\
-To read a file into the current document use the "r" command:\\
-e.g. r ~/test\\
-!clear\\
-Here is the syntx for substitutions:\\
-S) (.,.) S/<regexp>/<string>/ Substitute\\
-The character "&" in the <string> has a value equal to the text matched by the <regexp>.\\
-Any character but space or <nl> may be used instead of "/" to bound the <regexp>.\\
-The V command:\\
-exactly like the "G" command, except that the commands are performed in lines not matching the\\ <regexp>.\\
-The write command: w\\
-With this command the value of "." is not changed.\\
-w\\
-The z command scrolls text X number of lines from the current line:\\
-e.g. Z10n scrolls 10 lines and prints line numbers\\
-Mon Jul  5 18:31:22 SAST 2021\\
-e - edit a different file. This powerful command allows you to go from one file to another\\ without leaving Ed!\\
-"scrolling" -- 1z25n\\
-Navigation: P and N\\
-.,. - prints a range pf lines\\
-.-2,.p\\
-"p" is the only command that is allowed to follow another command\\
-No other multi-command lines are legal.\\
-,p - prints all lines\\
-%p - idem\\
-t - used to copy text e.g. 1t$\\
-r - reading text from another file INTO current document\\
-H - verbose mode. Toggles the printing of error explanations.\\
-! - to access the shell\\
-!clear - clear the screen\\
-r ! [prog-name] - read contents of shell into the file\\
-0r !date - read date into top of current file\\
-*g/the/t. - duplicate lines that match our regex, copying them in place.\\
-For interactive searching:\\
-G/re/n\\
-Use /.../ for context searching\\
-Ed begins the search on line .+1,\\
-searches through to the end of the buffer and then wraps\\
-from $ to 1\\
-John 3:16\\
-"For God so loved the world\\
-that He gave his only begotten Son\\
-that whosoever believes in Him\\
-should not perish\\
-but has everlasting life."\\
-One can use a range of words to find something.\\
-For e.g. in the above one could do a search for:\\
-/For/,/life/n\\
-An "address" need not be a line number.\\
-Special character &\\
-The & is another shorthand character âˆ’\\
-it is used only on the right-hand part of a substitute\\
-command "where it means whatever was matched on the left-hand side".\\
-e.g. s/.*/(&)/\\
-This means, "match the whole line and surround it by parentheses"\\
-One can achieve the above effect on single words too.\\
-e.g. s/single/"&"/p\\
-The & can be used several times in a line; consider using the following:\\
-s/.*/&? &!!/\\
-to produce\\
-Now is the time? Now is the time!!\\
-The & is a special character only within the replacement text of a substitute command, and has no\\ special meaning elsewhere.
-a, i, c, -- are all terminated by .\\
-If one uses "e" one should issue a "w" beforehand to save the buffer.\\
-j - join lines. 1,2n - see what lines to join. l,2j - join lines 1 and 2 together\\
-To add a space at the end of a line:  s/.*/& /\\
-To add a space and then join two lines:\\
-227g/.*/s//& /\\\
-227,228j\\
+a = append\
+c = change -- deletes the addressed line and replaces it with the input text\
+d = delete -- deletes addressed lines\
+e.g. 3,4d will delete lines 3-4\
+s = substitues one regex for another\
+e.g. s/the/their replaces "the" with "their"\
+g = global search\
+e.g. g/the/s//their/g\
+i - insert text\
+m = move text\
+k + number = bookmarks an address\
+' + letter = goes to bookmarked address\
+q = quits Ed\
+Q = quits Ed unconditionally\
+p = prints lines\
+The first line is numbered 1\
+The last line is numbered $\
+. stands for the current line\
+Sequences of two or more addresses are separated either by "," or by ";"\
+-------\
+a\
+c\
+d 1,3d\
+s\
+g/women/ s/women/woman/\\
+s/the/the\
+The above is the correct syntax for multiple substitutions\
+The man told teh woman that she was beautiful\
+Originally called QED\
+Easy to use, hard to learn\
+Authors: D. M. Ritchie and K. L. Thompson\
+There are anumber of commands each of which is one character long.\
+Each command is preceded by zero or more addresses\
+n = prints the addressed lines\
+e.g. 1,5n ; ,n\
+P = toggles the command prompt on and off\
+a=append\
+specifying lines in the current buffer.\
+Some commands are follwed by paramenters as well.\
+Hence: ADDRESS | COMMAND | PARAMETER\
+Regular expressions are a unique feature of QED.\
+Used to search for text and/or replace it\
+^ matches the null character at the beginning of a line\
+$ matches the null character at the end of the line\
+. matches any character except <nl>\
+[<string>] matches any characters in the string and no others\
+[^<string>] matches any character EXCEPT the characters in the string\
+But one is better off using the v or V command\
+For example: v/[A-Z]/ -- finds all lines that do not contain capital letters\
+\* matches any number of occurances of adjacent text including zero - frequency\
+| searches for alternatives\
+Parentheses alter the ORDER of the regex\
+No regular expression will match text spread across\
+than one line.\
+/ ... / sets the bounds of the regex\
+\
+For instance, there was a T command which could test a regular expression,\
+which is not available in the GNU version.\
+s/\<he\>/she\
+P = shows the prompt\
+n = prints line with line numbers\
+The man told the woman she was beautiful.\
+To read a file into the current document use the "r" command:\
+e.g. r ~/test\
+!clear\
+Here is the syntx for substitutions:\
+S) (.,.) S/<regexp>/<string>/ Substitute\
+The character "&" in the <string> has a value equal to the text matched by the <regexp>.\
+Any character but space or <nl> may be used instead of "/" to bound the <regexp>.\
+The V command:\
+exactly like the "G" command, except that the commands are performed in lines not matching the\ <regexp>.\
+The write command: w\
+With this command the value of "." is not changed.\
+w\
+The z command scrolls text X number of lines from the current line:\
+e.g. Z10n scrolls 10 lines and prints line numbers\
+Mon Jul  5 18:31:22 SAST 2021\
+e - edit a different file. This powerful command allows you to go from one file to another\ without leaving Ed!\
+"scrolling" -- 1z25n\
+Navigation: P and N\
+.,. - prints a range pf lines\
+.-2,.p\
+"p" is the only command that is allowed to follow another command\
+No other multi-command lines are legal.\
+,p - prints all lines\
+%p - idem\
+t - used to copy text e.g. 1t$\
+r - reading text from another file INTO current document\
+H - verbose mode. Toggles the printing of error explanations.\
+! - to access the shell\
+!clear - clear the screen\
+r ! [prog-name] - read contents of shell into the file\
+0r !date - read date into top of current file\
+*g/the/t. - duplicate lines that match our regex, copying them in place.\
+For interactive searching:\
+G/re/n\
+Use /.../ for context searching\
+Ed begins the search on line .+1,\
+searches through to the end of the buffer and then wraps\
+from $ to 1\
+John 3:16\
+"For God so loved the world\
+that He gave his only begotten Son\
+that whosoever believes in Him\
+should not perish\
+but has everlasting life."\
+One can use a range of words to find something.\
+For e.g. in the above one could do a search for:\
+/For/,/life/n\
+An "address" need not be a line number.\
+Special character &\
+The & is another shorthand character âˆ’\
+it is used only on the right-hand part of a substitute\
+command "where it means whatever was matched on the left-hand side".\
+e.g. s/.*/(&)/\
+This means, "match the whole line and surround it by parentheses"\
+One can achieve the above effect on single words too.\
+e.g. s/single/"&"/p\
+The & can be used several times in a line; consider using the following:\
+s/.*/&? &!!/\
+to produce\
+Now is the time? Now is the time!!\
+The & is a special character only within the replacement text of a substitute command, and ha no\\ special meaning elsewhere
+a, i, c, -- are all terminated by .\
+If one uses "e" one should issue a "w" beforehand to save the buffer.\
+j - join lines. 1,2n - see what lines to join. l,2j - join lines 1 and 2 together\
+To add a space at the end of a line:  s/.*/& /\
+To add a space and then join two lines:\
+227g/.*/s//& /\
+227,228j\
