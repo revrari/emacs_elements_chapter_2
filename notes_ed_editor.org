@@ -1,12 +1,12 @@
 #+title: Notes on the Ed
 #+options: \n:t
-======================
+
 The version of Ed I am using is Gnu Ed version 1.17
 Changes between versions
 Something has been lost
 
-LINE NUMBERS
-============
+* LINE NUMBERS
+
 The 1st line is numbered 1
 The value of . is the current line
 $ is last line in the buffer
@@ -17,8 +17,8 @@ e.g. the following gives us context: -2,+2p
 This is equivalent to .-2,.+2 print
 Sequences of two or more addresses are separated either by "," or by ";".
 
-COMMANDS
-========
+* COMMANDS
+
 a = append
 c = change -- deletes the addressed line and replaces it with the input text
 d = delete -- deletes addressed lines
@@ -68,13 +68,13 @@ $ matches the null character at the end of the line
 [^<string>] matches any character EXCEPT the characters in the string
 But one is better off using the v or V command
 For example: v/[A-Z]/ -- finds all lines that do not contain capital letters
-* matches any number of occurances of adjacent text including zero - frequency
+\* matches any number of occurances of adjacent text including zero - frequency
 | searches for alternatives
 Parentheses alter the ORDER of the regex
 No regular expression will match text spread across
 than one line.
 / ... / sets the bounds of the regex
-==========================================================================
+
 For instance, there was a T command which could test a regular expression,
 which is not available in the GNU version.
 s/\<he\>/she
@@ -149,4 +149,3 @@ To add a space at the end of a line:  s/.*/& /
 To add a space and then join two lines:
 227g/.*/s//& /\
 227,228j
-
