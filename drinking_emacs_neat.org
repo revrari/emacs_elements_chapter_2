@@ -1,0 +1,53 @@
+#+title: DRINKING EMACS NEAT
+#+date: <2021-04-19 Mon>
+#+STARTUP: showall
+#+OPTIONS: \\n:t"
+
+How to really speed up Emacs
+What is good about Emacs is Emacs -- Vanilla Emacs
+Parasitic packages.
+
+I do not install external packages until I am sure Vanilla Emacs cannot do the job.
+
+Removed all my external packages
+Customized Emacs the way I wanted it
+Sought Solutions to probelms I normally solve with packages
+
+- abbrev-mode
+- pdf-tools
+- grep = lgrep and rgrep
+  grep -nH -e Mom ~/files/*.org --null
+- Backup of a file
+  remember-mode
+  (define-key global-map (kbd "<f9> b") 'remember-finalize) formerly =remember-buffer=
+- Electric pairs for org-markup
+  =C-c C-x C-f=
+- goto last place -- use mark
+- show the mark in Emacs
+  https://youtu.be/iFTG4iAsrzE
+- show keystrokes in Emacs (Type C-h l, which invokes view-lossage.)
+- Open in external applications
+
+;; OPEN FILES IN EXTERNAL APP (use S-! on the file to open)
+
+#+begin_src emacs-lisp :tangle yes
+(setq dired-guess-shell-alist-user
+   '(("\\.pdf$" "firefox")
+	 ("\\.docx$" "libreoffice --writer")
+	 ("\\.odt$" "libreoffice --writer")
+	 ("\\.txt$" "geany")
+	 ("\\.png$" "viewnior")
+	 ("\\.jpg$" "viewnior")
+	 ("\\.tiff$" "viewnior")
+	 ("\\.tif$" "viewnior")
+	 ("\\.mkv$" "vlc")
+	 ("\\.mp4$" "vlc")
+	 ("\\.avi$" "vlc")
+	 ("\\.wmv$" "vlc")
+	 ("\\.mp3$" "audacious")
+	 ("\\.wav$" "audacious")
+	 ("\\.html$" "firefox")))
+#+end_src
+
+Click on a completion to select it.
+In this buffer, type RET to select the completion near point.
