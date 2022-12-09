@@ -132,9 +132,9 @@ But one is better off using the v or V command
 For example: v/[A-Z]/ -- finds all lines that do not contain capital letters
 
 
-* matches any number of occurances of adjacent text including zero - frequency
+\\* matches any number of occurances of adjacent text including zero - frequency
 
-| searches for alternatives
+\| searches for alternatives
 
 Parentheses alter the ORDER of the regex
 
