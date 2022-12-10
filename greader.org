@@ -1,0 +1,15 @@
+#+title: Greader and Espeak
+#+options: \n:t 
+<2022-12-10 Sat>
+
+Install espeak
+
+Install Greader
+
+(require 'greader)
+
+Activate greader-mode
+
+C-r <space>
+<space>
+
