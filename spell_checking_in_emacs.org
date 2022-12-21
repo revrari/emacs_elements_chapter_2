@@ -76,6 +76,8 @@ No doubt aspell gives better choices, while hunspell is quicker.
 
 * Another option for minimalists
 
+sudo apt-get install spell
+
 spell [filename]
 
 spell -b --dictionary=/home/red/.spell misspelled.txt
