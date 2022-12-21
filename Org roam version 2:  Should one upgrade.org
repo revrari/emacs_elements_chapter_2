@@ -13,7 +13,7 @@ This is frustrating, but the effort to migrate is worthwhile. (Is this not a fru
 
 MAJOR CHANGES
 -------------
-1. Each file now requires an ID:
+** Each file now requires an ID
 
 :PROPERTIES:
 :ID:       foo
@@ -41,7 +41,9 @@ changes in paths do now no longer affect links, or give you dead links.
 
 With V2 all links are id based.
 
-2. Tags used in or1 do not work in or2. One must:
+** Tags used in or1 do not work in or2. 
+
+One must:
 
 Replace #+ROAM_KEY with ROAM_REF
 
@@ -53,8 +55,8 @@ Move #+ROAM_TAGS into the #+FILETAGS property for file-level nodes, and the ROAM
 
 One must replace existing file links with ID links.
 
-Migration Wizard
-----------------
+** Migration Wizard
+
 The developers had provided a migration script.
 
 THIS MIGRATION SCRIPT IS NOW DEPRECATED. 
@@ -65,7 +67,7 @@ FOUND WITHIN
 
 One must use THE ORG-ROAM REPO ITSELF.
 
-The sample configuration has changed:
+** The sample configuration has changed:
 
 #+begin_src emacs-lisp
 (use-package org-roam
@@ -105,4 +107,3 @@ Resources
 ---------
 https://d12frosted.io/posts/2021-06-11-path-to-org-roam-v2.html#fn1
 https://www.orgroam.com/manual.html
-
