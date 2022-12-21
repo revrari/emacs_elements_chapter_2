@@ -1,5 +1,7 @@
 #+title: Org Roam Basics
 
+# This was my very first emacs_elements video
+
 #+begin_src emacs-lisp
 (require 'org-roam)
 
