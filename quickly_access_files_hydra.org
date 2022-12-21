@@ -1,0 +1,22 @@
+#+title: Quickly access your folders in Emacs with Hydra
+
+#+begin_src emacs-lisp
+;;; hydra
+
+(straight-use-package 'hydra)
+
+(global-set-key (kbd "C-.") 'hydra-navigation/body)
+
+(defhydra hydra-navigation ()
+ "navigating hydra"
+ ("f" (dired "~/files") "files")
+ ("p" (dired "~/.emacs.d/packages") "packages")
+ ("d" (dired "~/.emacs.d/diary") "diary")
+ ("t" (dired "~/.emacs.d/tmp") "tmp")
+ ("c" (dired "~/.emacs.d/.emacs-custom.el") "custom")
+ ("r" (dired "~/resources") "resources")
+ ("l" (dired "~/resources/liturgy") "liturgy")
+ ("h" (dired "~/files/hyperbole/") "hyperbole")
+ 
+ #+end_src
+
