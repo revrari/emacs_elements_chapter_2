@@ -24,7 +24,7 @@ The above is called a file node.
 
 Headline nodes may also have IDs:
 
-* Bar
+\* Bar
 :PROPERTIES:
 :ID:       bar
 :END:
