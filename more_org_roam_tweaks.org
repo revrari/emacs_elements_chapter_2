@@ -1,16 +1,8 @@
 #+title: More org-roam tweaks
-#+roam_alias: "emacs channel" "emacs-elements"
-#+created: [2021-02-11 Thu]
-#+last_modified: [2021-02-11 Thu 09:30]
-#+ROAM_TAGS: org-roam
-
-
-
+[2021-02-11 Thu]
+[2021-02-11 Thu 09:30]
 
 *open-recent-files*
-
-
-
 
 (winner-mode +1)
 
@@ -34,9 +26,6 @@ This tweak allows you to revert actions done in the org-roam window. I will cove
 
 *ORG_DOWNLOAD*
 
-#+DOWNLOADED: file:///home/red/Desktop/flower-wallpaper-20.jpg @ 2021-02-11 12:05:47
-[[file:2021-02-11_12-05-47_flower-wallpaper-20.jpg]]
-
 Insert pictures into org-roam files
 
 #+begin_src emacs-lisp
@@ -50,7 +39,7 @@ Insert pictures into org-roam files
 #+end_src
 
 *alternative titles* org
-#+roam_alias:
+\#+roam_alias:
 
 e.g. Lent 1
 First Sunday in Lent
@@ -59,7 +48,7 @@ org-roam-title-sources
 
 *org-roam keys*
 
-#+roam_key: 
+\#+roam_key: 
 
 Google
 https://www.google.com/
