@@ -83,3 +83,5 @@ spell [filename]
 spell -b --dictionary=/home/red/.spell misspelled.txt
 
 aspell check [filename]
+
+/finis/
