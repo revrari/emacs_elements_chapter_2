@@ -18,7 +18,7 @@ MAJOR CHANGES
 :PROPERTIES:
 :ID:       foo
 :END:
-#+title: Foo
+\#+title: Foo
 
 The above is called a file node.
 
