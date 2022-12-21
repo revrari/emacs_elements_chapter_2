@@ -25,4 +25,13 @@
 		],
 		"description": "emacs-lisp snippet"
 	  }
+
+	  "org-title": {
+		"prefix": "omt",
+		"body": [
+		  "#+title: $1",
+		  "#+options: \\n:t "
+		],
+		"description": "org-title"
+	  }
 }

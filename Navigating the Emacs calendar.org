@@ -1,0 +1,17 @@
+#+title: Navigating the Emacs calendar
+#+options: \n:t 
+
+* Diary navigation
+C-u C-c c -- go to a specific month and year
+gd -- Go to a date while in calendar
+C-f C-b -- By day
+C-n C-p -- By week
+M-} M-{ -- By month
+C-x [ ] -- By year
+
+* Scroll diary
+< -- forwards by one month
+> -- backards by one month
+C-v -- forwards by three months
+M-v -- backwards by three months
+
