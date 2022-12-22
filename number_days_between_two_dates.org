@@ -1,0 +1,28 @@
+#+title: Work out the number of days between two dates in Emacs
+#+options: \n:t
+
+7 Jan 2022, 08:59:20
+
+Work out the number of days between two dates in Emacs
+
+e.g. vaccine 2nd dose
+
+*  M-x calendar (C-c c)
+
+C-space
+
+M-=
+
+* orgmode
+
+Work out how many days to my next vaccine
+
+Most useful for dates separated by a long period
+
+<1998-02-01 Sun>--<2021-08-02 Mon>
+
+Put point somehwere on the dates and type: =C-c C-y=
+
+OR
+
+=C-u C-c Cy= to insert number of days, i.e. ~org-time-stamp-to-now~
