@@ -10,7 +10,7 @@ www.gnu.org/software/hyperbole
 
 Hyperbole offers the wonderful ability to create buttons in any buffer or in files of any kind that allow you to quickly navigate to places or execute actions.
 
-THIS IS A BUTTON: "~/Pictures/buttons/" THE BUTTON IS A METAPHOR
+THIS IS A BUTTON: "~/Pictures/" THE BUTTON IS A METAPHOR
 
 It's a button because when you click on it, you *launch* something. *LIKE A ROCKET*
 
@@ -18,8 +18,10 @@ There are two main types of buttons: Implicit, Explicit
 
 Implicit and Explicit buttons can also be used "globally" in which case they are called "Global Buttons". Such buttons are located this file:
 
-"c:/rari/.hyperb/HYPB"
+"/home/red/.hyperb/HYPB"
+
 OR,
+
 {C-h h b p} - Navigates to your personal button file of global buttons
 
 Global Buttons can be accessed from anywhere in Emacs, not only from a particular file or buffer.
