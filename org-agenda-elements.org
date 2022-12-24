@@ -39,25 +39,23 @@
 
 ​#+STARTUP: showeverything
 
+* Customisations
+
+#+begin_src emacs-lisp
 (global-set-key (kbd "<f6>") (lambda() (interactive)(find-file "~/org-agenda/main.org")))
 
 (setq org-agenda-directory '("~/org_agenda"))
 ;; C-c [ or ]
 
 (global-set-key (kbd "C-c a") 'org-agenda)
-
 (global-set-key [f5] (quote counsel-org-goto))
-
 (global-set-key [f9] 'org-agenda-list)
-
 (global-set-key [f7] 'org-tags-view)
 
 (setq org-agenda-window-setup 'current-window)
-
 (setq org-agenda-skip-deadline-if-done t)
-
 (setq org-agenda-skip-scheduled-if-done t)
-
 (setq org-agenda-skip-timestamp-if-done t)
-
 (setq org-agenda-start-on-weekday 0)
+#+end_src
+
