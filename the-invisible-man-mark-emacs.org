@@ -1,0 +1,79 @@
+#+title: The Mark in Emacs
+#+OPTIONS: \n:t 
+[2022-12-24 Sat]
+
+The invisible man
+
+visible-mark
+
+Marks can be set, activated and popped.
+
+Marks are used for selecting text (regions) and navigating in a buffer and in recent buffers.
+
+_Setting the mark_
+
+C-SPC Sets the mark at point and activates it (set-mark-command).
+
+C-x C-x (exchange-point-and-mark)
+
+C-u C-x C-x leaves the mark inactive and the region unhighlighted
+
+_Marking text objects_
+
+C-M-SPC (mark-word)
+
+Or is it not rather the case that just as the eye and hand and foot and in fact every member [of the body] has some function, so too one must posit some function to man [as a whole] in addition to the functions his respective members possess? AE 1,7
+
+M-# mark-end-of-sentence.
+
+C-M-@ (mark-sexp) symbolic expression
+
+M-h (mark-paragraph) paragraph
+
+C-M-h (mark-defun) define function
+
+C-x C-p (mark-page) *Note: C-q C-l inserts a page* ^L
+
+C-x h (mark-whole-buffer)
+
+_Navigation_
+You can also use the Mark to remember a position in the buffer by typing C-SPC C-SPC, and later jump back there by typing C-u C-SPC.
+
+_Mark-ring_
+
+When we set a new mark or deactivate a mark we PUSH the old mark to the mark-ring (to the top of a stack of old marks). When we invoke C-u SPC we move the mark at the top of the stack back to its original position and restore the mark. 
+
+_Setting Mark with yank_
+
+Many commands that insert text, such as C-y (yank), set the mark at the other end of the inserted text, without activating it. This lets you easily return to that position. you can tell that a command does this when it shows 'Mark set' in the echo area.
+
+_The Global Mark Ring_
+
+C-x C-SPC (pop-global-mark) jumps to the buffer and position of the latest entry in the global ring. It also rotates the ring, so that successive uses of C-x C-SPC take you to earlier buffers and mark positions.
+
+C-c & (org-mark-ring-goto) jumps to previous position in the mark ring
+
+_How do I view the mark ring?_
+
+C-h v mark-ring
+C-h v global-mark-ring
+https://emacs.stackexchange.com/questions/47073/how-do-i-view-the-mark-ring
+
+_Special tip_
+
+Use this sequence to select text:
+
+C-<space>
+C-s
+foo
+
+_Special Customizations_
+
+'(set-mark-command-repeat-pop t)
+
+Press C-u C-SPC then simply C-SPC
+
+_You can also use the register to mark locations_
+
+C-x r <space> "letter"
+C-x r j "letter"
