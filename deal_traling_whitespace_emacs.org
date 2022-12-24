@@ -1,0 +1,56 @@
+#+title: Dealing with trailing whitespace in Emacs
+[2022-12-24 Sat]
+
+* Trailing whitespace
+
+The term refers to unnecessary spaces at the end of a line and also to empty lines at the end of a buffer
+
+* How can I show trailing whitespace?
+
+You can show trailing whitespace at the end of a line by setting this variable:
+
+=show-trailing-whitespace t=
+
+Note: One can change the face of trailing whitespace when this variable is activated:
+
+=M-x customize-face trailing-whitespace=
+
+Note: If point is at the end of the line this feature does not apply as it would be too unseemly.
+
+To show empty lines at the end of the buffer:
+
+=(setq-default indicate-empty-lines t)=
+
+The empty lines are indicated in the fringe.
+
+* How to deal with trailing whitespace?
+
+** Non-aggressive approach
+
+=M-x delete-trailing-whitespace= deletes all trailing whitespace
+
+This command deletes all extra spaces at the end of each line in the buffer and all empty lines at the end of the buffer.
+
+=(global-set-key (kbd "C-c w") 'delete-trailing-whitespace)=
+
+** More aggressive approach
+
+=M-x whitespace-cleanup=
+
+** More complex solutions
+
+whitespace-mode lets you visualise many kinds of whitespace in the buffer
+
+You can customize your whitespace style by setting this variable:
+
+=whitespace-style=
+
+Note: One would not require this mode and show-trailing-whitespace
+
+* Miscellaneous
+
+M-SPC – delete extra spaces between words
+
+=delete-blank-lines= – delete extra blank lines between paragraphs
+
+=next-line-add-newlines= – prevents adding newlines at end of buffer with arrow key
