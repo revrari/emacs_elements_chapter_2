@@ -1,4 +1,4 @@
-#+title: Org Agenda Elements
+#+title: The elements of Org Agenda
 #+DATE: [2022-12-24 Sat]
 #+AUTHOR: Raoul Comninos
 
