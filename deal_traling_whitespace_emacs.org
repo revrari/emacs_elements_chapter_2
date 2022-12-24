@@ -49,7 +49,7 @@ Note: One would not require this mode and show-trailing-whitespace
 
 * Miscellaneous
 
-M-SPC – delete extra spaces between words
+=M-SPC= – delete extra spaces between words
 
 =delete-blank-lines= – delete extra blank lines between paragraphs
 
