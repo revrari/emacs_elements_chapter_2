@@ -6,7 +6,7 @@
 
 * The past
 
-It used to be the case that in order to type Greek and Hebrew properly in Emacs one would require a specialised application such as Nota Bene for Scholars or Microsoft Word. Emacs has now evolved to the point where it can fulfil this role without too much loss of precision. It can also now accurately render (via copy and paste or through pandoc conversion) all documents with Greek and Hebrew previously created in these other applications.
+It used to be the case that in order to type Greek and Hebrew properly one would require a specialised application such as Nota Bene for Scholars or Microsoft Word. Emacs has now evolved to the point where it can fulfil this role without too much loss of precision. It can also now accurately render (via copy and paste or through pandoc conversion) all documents with Greek and Hebrew previously created in these other applications.
 
 * Install the latest developmental version of Emacs
 
