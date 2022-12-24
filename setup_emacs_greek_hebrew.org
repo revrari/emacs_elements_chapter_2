@@ -1,5 +1,8 @@
 #+title: How to set up Emacs to best type Greek and Hebrew – for dummies
+
 [2022-12-24 Sat]
+
+* GHB
 
 * The past
 
@@ -34,10 +37,10 @@ Put the following code into your dot emacs file.
 
 #+begin_src emacs-lisp
 ;; Greek and Hebrew
-;; To type Greek: S-C-|
-;; To type Greek: C-\
-;; To toggle English C-\
+;; To toggle English/Greek: S-C-|
+;; To toggle English/Hebrew C-\
 ;; Describe-input-method
+
  ;;type hard break for Hebrew to English C-x 8 f
   (define-key 'iso-transl-ctl-x-8-map "f" [?‎])
 
@@ -79,8 +82,6 @@ This code especially helpful for typing Hebrew:
 
 Example: ἀδελφός Example:*שְׁמַע ישְׂרָאֶל*
 
-(Note you may see no difference in size reading the above, but the difference is apparent in Emacs.)
-
 (Note that this will not make a change to the actual size of the fonts in the actual document, or when exported. This gives a purely visual increase of the font size.)
 
 You can adjust the size to suit your needs.
@@ -90,6 +91,7 @@ https://emacs.stackexchange.com/questions/53755/increase-the-font-size-for-hebre
 * To type basic Greek using the input method allowed by the code above (greek-babel)
 
 Type Shift-Control \ for Greek keyboard
+
 Type < or > for breathings e.g. ἀδελφος
 ~ for circumflex ὑμῖν
 ' or ` for accents δὲ
