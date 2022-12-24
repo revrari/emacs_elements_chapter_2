@@ -1,0 +1,57 @@
+#+title: A Collection of Ridiculously Useful eXtensions for Emacs
+#+OPTIONS: \n:t
+
+https://github.com/bbatsov/crux
+
+Or one can get it from Melpa Stable
+
+Crux does not set up any keybindings, but does recommend some
+
+crux-open-with -- Open the currently visited file with an external program.
+
+crux-cleanup-buffer-or-region -- Fix indentation in buffer and strip whitespace.
+
+crux-transpose-windows -- Transpose the buffers between two windows. C-x 4 t
+
+crux-delete-file-and-buffer -- Delete current file and buffer. C-c D
+
+crux-duplicate-and-comment-current-line-or-region -- Duplicate and comment the current line (or region).
+
+crux-rename-file-and-buffer -- Rename the current buffer and its visiting file if any.
+
+crux-visit-term-buffer -- Open a terminal emulator (ansi-term).
+
+crux-find-user-init-file -- Open user's init file.
+
+crux-find-shell-init-file -- Open shell's init file. C-c S
+
+crux-kill-whole-line -- Kill whole line C-x k
+
+crux-other-window-or-switch-buffer -- Select other window, or switch to most recent buffer if only one windows.
+
+crux-reopen-as-root-mode -- command for reopening a file as root
+
+Some example bindings for crux:
+
+#+begin_src emacs-lisp
+(global-set-key [remap move-beginning-of-line] #'crux-move-beginning-of-line)
+(global-set-key (kbd "C-c o") #'crux-open-with)
+(global-set-key [(shift return)] #'crux-smart-open-line)
+(global-set-key (kbd "s-r") #'crux-recentf-find-file)
+(global-set-key (kbd "C-<backspace>") #'crux-kill-line-backwards)
+(global-set-key [remap kill-whole-line] #'crux-kill-whole-line)
+#+end_src
+
+My own custom bindings:
+
+#+begin_src emacs-lisp
+;;Crux
+(global-set-key "4t" 'crux-transpose-windows)
+(global-set-key "D" 'crux-delete-file-and-buffer)
+(global-set-key "r" 'crux-rename-file-and-buffer)
+(global-set-key "S" 'crux-find-shell-init-file)
+(global-set-key "k" 'crux-kill-whole-line)
+#+end_src
+
+
+
