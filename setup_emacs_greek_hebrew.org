@@ -1,5 +1,8 @@
 #+title: How to set up Emacs to best type Greek and Hebrew – for dummies
 
+<set-frame-font "Dejavu Sans Mono 14" nil t>
+<set-frame-font "Dejavu Sans Mono 12" nil t>
+
 [2022-12-24 Sat]
 
 * GHB
@@ -34,6 +37,8 @@ https://www.sbl-site.org/educational/biblicalfonts.aspx
 * Set up keyboard shortcuts to easily change from English to Greek or Hebrew
 
 Put the following code into your dot emacs file.
+
+English המלכים αδελφος
 
 #+begin_src emacs-lisp
 ;; Greek and Hebrew
@@ -92,6 +97,8 @@ https://emacs.stackexchange.com/questions/53755/increase-the-font-size-for-hebre
 
 Type Shift-Control \ for Greek keyboard
 
+ἀδελφος
+
 Type < or > for breathings e.g. ἀδελφος
 ~ for circumflex ὑμῖν
 ' or ` for accents δὲ
@@ -125,4 +132,3 @@ See the post below:
 https://emacs.stackexchange.com/questions/52936/searching-greek-and-hebrew-texts-in-emacs-with-isearch-while-ignoring-accents-an/52937#52937
 
 Email me: [[Email me][revrari@mweb.co.za]]
-
