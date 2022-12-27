@@ -1,0 +1,16 @@
+#+title: Confirmation hell in Emacs
+[2022-12-27 Tue]
+#+OPTIONS: \n:t
+
+(setq dired-clean-confirm-killing-deleted-buffers nil)
+(setq dired-confirm-shell-command nil)
+(setq dired-no-confirm t)
+(setq dired-recursive-deletes (quote always))
+(setq dired-deletion-confirmer '(lambda (x) t))
+(setq dired-recursive-deletes 'always)
+(setq confirm-kill-emacs nil)
+(setq confirm-kill-processes nil)
+(setq confirm-nonexistent-file-or-buffer nil)
+(set-buffer-modified-p nil)
+
+(defalias 'yes-or-no-p 'y-or-n-p)
