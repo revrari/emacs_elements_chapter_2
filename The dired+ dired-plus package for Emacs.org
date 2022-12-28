@@ -53,7 +53,7 @@ Use customize-option to customise these
 
 One customised face
 
-='(diredp-compressed-file-suffix ((t (:foreground "orange"))))=
+~'(diredp-compressed-file-suffix ((t (:foreground "orange"))))~
 
 Use customize-face to customise this
 
@@ -69,7 +69,7 @@ C-RET – Open Windows Explorer on a file or folder
 
 ^ - Get a list of drives on your computer (great!)
 
-='(diredp-w32-local-drives '(("C:" "Local disk") ("E:" "Local disk")))=
+~'(diredp-w32-local-drives '(("C:" "Local disk") ("E:" "Local disk")))~
 
 You will need w32-browser.el (which you need to put in your `load-path' and `require', if you want to use it.)
 
