@@ -1,0 +1,12 @@
+#+title: Install plan9 on qemu
+#+OPTIONS: \n:t 
+
+http://9p.io/plan9/download.html
+https://www.qemu.org/download/
+Add to Windows path
+Regular plan 9
+qemu-img create -f qcow2 plan9.qcow2.img 8G
+qemu-system-x86_64.exe -hda plan9.qcow2.img -cdrom plan9.iso -boot d -vga std -m 1024
+1024x768x32
+3 button mouse ps2intellimouse
+qemu-system-x86_64.exe -hda plan9.qcow2.img -boot c -vga std -m 1024
