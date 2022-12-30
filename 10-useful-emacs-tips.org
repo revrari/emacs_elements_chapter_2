@@ -1,24 +1,29 @@
 #+title: 10 Useful EMACS TIPS
-
-2021-07-04 Sun 10:39
+#+date: [2022-12-30 Fri]
 
 * Copy link dired
 
-  C-0 w -- absolute
-  /home/red/.bash_history
-  C-u w -- relative
-  .bash_history
+C-0 w -- absolute path
+
+#+begin_example
+home/red/.bash_history
+#+end_example
+
+C-u w -- relative
+#+begin_example
+.bash_history
+#+end_example
 
 * Numbered lists org
 
- 1) item 1
- 2) item 2
+1) item 1
+2) item 2
 
 This text would interrupt the list and the next item would be 1) on a
 new list
 
- 3) [@3] This will be item 3
- 4) and this will be item 4
+3) [@3] This will be item 3
+4) and this will be item 4
 
 * Flush lines
 
@@ -41,9 +46,7 @@ preserve line breaks org export
 
 org-export-preserve-breaks
 
-or per file:
-
-OPTIONS: \n:t
+or on a per file basis: ~OPTIONS: \n:t~
 
 * Set mark and go to last place
 
@@ -54,9 +57,7 @@ C-u C-SPC
 
 M-x delete-region
 
-(global-set-key "f" (quote flush-lines))
-
-C-d or DEL
+C-d or DEL (Backspace)
 
 * Get rid of funny ^M characters in an Emacs file code encoding
 
