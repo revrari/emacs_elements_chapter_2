@@ -1,0 +1,46 @@
+﻿Nota Bene Workstation
+Notes for emacs-element video
+December 31, 2022
+
+They don’t advertise
+f1 help
+sample instructional files (Help Menu)
+3 tools: Word-Processor, Orbis, Ibidem
+
+Platforms: Windows, Mac, Linux
+
+Predefined academic files
+
+Unlike many Word Processors it provides an action line for typed commands f9 then f10 or Enter
+
+e.g. SA to Save or TODAY to enter today’s date
+
+More complex example:
+
+TS 1,2,3 sets tabs at 1, 2 and 3 inches
+SZ 12PT sets point size to 12 points
+
+C-S-up C-S-down (recent commands on action line)
+
+Limitation: Action line can use file names of only 8 letters
+
+Obis: Retrieve notes f4
+
+Ibidem: bibliographic database manager, citations, bibliographies. f7
+
+IbidPlus for non-bibliographic databases
+
+Lingua Module adds support for languages
+
+Easy entry of languages, accents, vowels, diacritics, et.
+
+Insert symbols
+
+f5 + Capital ‘S’ gives section sign
+
+Zoom
+
+Different ways of saving a file
+
+Setting font for session
+Setting font permanently
