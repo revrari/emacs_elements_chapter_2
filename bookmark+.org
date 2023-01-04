@@ -1,34 +1,45 @@
 #+title: bookmark-plus
-#+ROAM_TAGS: bookmark+ drew
 #+created: [2021-03-03 Wed]
-#+last_modified: [2021-03-03 Wed 17:22]
+#+last_modified: [2023-01-04]
 
 Bookmark+ ENHANCES VANILLA EMACS BOOKMARKS IN MANY WAYS
+
 Program by Drew Adams, author of icicles, showkey, and dired+
 
 * Bookmarks in Vanilla Emacs
-=C-x-r-m=
-=C-x-r-l=
+
+C-x-r-m
+C-x-r-l
 
 * Installation
- - 8 libraries one must download + 4 optional libraries. I personally have downloaded them all.
- - Can be downloaded here: https://www.emacswiki.org/emacs/BookmarkPlus#h5o-51 from EmacsWiki
- - Add this to =init.el=
-   #+begin_example
-   (add-to-list 'load-path "c:/red/.emacs.d/pack/bookmark+")
-   (require 'bookmark+)
-   #+end_example
-   - The files must then be byte-compiled after loading the source files
-   - Note: one must load =bookmark+-mac.el= before we byte-compile
-   - =C-u M-x byte-recompile-directory=
- - One can check from time to time for any recent changes to the libraries by visiting this link:
+
+- 8 libraries one must download + 4 optional libraries. I personally have downloaded them all.
+- Can be downloaded here: https://www.emacswiki.org/emacs/BookmarkPlus#h5o-51 from EmacsWiki
+- Add to init.el:
+
+(add-to-list 'load-path "c:/red/.emacs.d/pack/bookmark+")
+(require 'bookmark+)
+
+- The files must then be byte-compiled after loading the source files
+- Note: one must load bookmark+-mac.el before we byte-compile
+- C-u M-x byte-recompile-directory
+- One can check from time to time for any recent changes to the libraries by visiting this link:
+
 https://www.emacswiki.org/emacs?action=rc;match=%5C.%28el%7Ctar%29%28%5C.gz%29%3F%24;from=1117497600;showedit=1
- - One must set a default bookmark file to store one's bookmarks
-   The variable =bookmark-default-file= allows you to set that file. This must be done at the start before you use bookmark+
+
+- One must set a default bookmark file to store one's bookmarks
+
+The variable bookmark-default-file allows you to set that file.
+
+This must be done at the start before you use bookmark+
 
 * Some key features
-- Basically bookmark anything, not just files: directories, regions, URLs, snippets, Dired buffers, Functions, occur results, even Bookmark files
-- Can access your bookmarks from anywhere =C-x j j=
+
+- Basically bookmark anything, not just files:
+
+directories, regions, URLs, snippets, Dired buffers, Functions, occur results, even Bookmark files
+
+- Can access your bookmarks from anywhere C-x j j
 - Different types of bookmarks coloured differently
   e.g. test.org
 - Add tags to bookmarks and files, You can sort, show/hide, or mark bookmarks based on their tags.
@@ -37,35 +48,34 @@ https://www.emacswiki.org/emacs?action=rc;match=%5C.%28el%7Ctar%29%28%5C.gz%29%3
 - Bookmark a region of text
 - Create snippets of text to be inserted later
 - If you change the location to your bookmarks these are relocated better
-- To bookmark a URL =bmkp-url-target-setd=
+- To bookmark a URL bmkp-url-target-setd
 
 * Main commands
 
-- Bookmark list =C-x x e=
-- Create Bookmark =C-x x m=
-  
+- Bookmark list C-x x e
+- Create Bookmark C-x x m
+
 * Basic Keys
 
-*Some basic keys you can use anywhere:*
-Bookmark the file you are editing: =C-x x m=
-Jump to a bookmark: =C-x j j=
-Tag a file (creates an autofile bookmark): C-x x t + a=
-List/edit your bookmarks: =C-x x e= OR =C-x r l=
+Some basic keys you can use anywhere:
 
-*Some keys you can use when in your bookmarks list:*
-Add/remove some tags to/from a bookmark: =T += AND =T -=
-Mark the bookmarks that have particular tags: =T m +=
-Unmark all bookmarks: =M-DEL= OR =S-U=
-Toggle marked/unmarked bookmarks: =t=
-Dired the marked bookmarks: =M-d >=
+Bookmark the file you are editing: C-x x m
+Jump to a bookmark: C-x j j
+Tag a file (creates an autofile bookmark): C-x x t + a
+List/edit your bookmarks: C-x x e OR C-x r l
+
+Some keys you can use when in your bookmarks list:
+
+Add/remove some tags to/from a bookmark: T + AND T -
+Mark the bookmarks that have particular tags: T m +
+Unmark all bookmarks: M-DEL OR S-U
+Toggle marked/unmarked bookmarks: t
+Dired the marked bookmarks: M-d >
 Then you can,
-Bookmark the Dired directory =C-x r m=
+Bookmark the Dired directory C-x r m
 
 * Documentation
 
 https://www.emacswiki.org/emacs/BookmarkPlus#h5o-51
-
-If you find this channel helpful please consider supporting me via PayPal: 
-https://paypal.me/revrari
 
 

@@ -23,17 +23,512 @@
 					"right_delete",
 					null,
 					"AQAAAAAAAAAAAAAAAAAAAAAAAAAKAAAAKiBQYXlQYWwKCg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAAAAAAA"
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAACgAAAAAAAAAAAAAAAAAAAA"
 				]
 			]
 		},
 		{
-			"file": "what_am_I_going_to_do_today_hyperbole_1.org",
+			"file": "The ls-command.md",
 			"settings":
 			{
-				"buffer_size": 3848,
+				"buffer_size": 457,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "The ls-command"
+			},
+			"undo_stack":
+			[
+				[
+					2,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAdQEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": "-"
+					},
+					"AQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"expand_snippet",
+					null,
+					"BAAAAAAAAAAAAAAAAAAAAAAAAAABAAAALQAAAAAAAAAAJgAAAAAAAAAAAAAAEwAAAAAAAAAlAAAAAAAAAAAAAAAlAAAAAAAAACUAAAAAAAAAEgAAAD09PT09PT09PT09PT09PT09PQ",
+					"AQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"insert",
+					{
+						"characters": "The"
+					},
+					"CgAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAABIAAABVbmRlcmxpbmVkIEhlYWRpbmcCAAAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAAAwAAAAAAAAASAAAAPT09PT09PT09PT09PT09PT09AQAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAUAAAAAAAAAAAAAAAUAAAAAAAAABQAAAAAAAAABAAAAPQIAAAAAAAAAAwAAAAAAAAAAAAAABAAAAAAAAAAHAAAAAAAAAAAAAAAHAAAAAAAAAAcAAAAAAAAAAgAAAD09",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAASAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": " ls-command"
+					},
+					"IQAAAAMAAAAAAAAABAAAAAAAAAAAAAAABQAAAAAAAAAJAAAAAAAAAAAAAAAJAAAAAAAAAAkAAAAAAAAAAwAAAD09PQQAAAAAAAAABQAAAAAAAAAAAAAABgAAAAAAAAALAAAAAAAAAAAAAAALAAAAAAAAAAsAAAAAAAAABAAAAD09PT0FAAAAAAAAAAYAAAAAAAAAAAAAAAcAAAAAAAAADQAAAAAAAAAAAAAADQAAAAAAAAANAAAAAAAAAAUAAAA9PT09PQYAAAAAAAAABwAAAAAAAAAAAAAACAAAAAAAAAAPAAAAAAAAAAAAAAAPAAAAAAAAAA8AAAAAAAAABgAAAD09PT09PQcAAAAAAAAACAAAAAAAAAAAAAAACQAAAAAAAAARAAAAAAAAAAAAAAARAAAAAAAAABEAAAAAAAAABwAAAD09PT09PT0IAAAAAAAAAAkAAAAAAAAAAAAAAAoAAAAAAAAAEwAAAAAAAAAAAAAAEwAAAAAAAAATAAAAAAAAAAgAAAA9PT09PT09PQkAAAAAAAAACgAAAAAAAAAAAAAACwAAAAAAAAAVAAAAAAAAAAAAAAAVAAAAAAAAABUAAAAAAAAACQAAAD09PT09PT09PQoAAAAAAAAACwAAAAAAAAAAAAAADAAAAAAAAAAXAAAAAAAAAAAAAAAXAAAAAAAAABcAAAAAAAAACgAAAD09PT09PT09PT0LAAAAAAAAAAwAAAAAAAAAAAAAAA0AAAAAAAAAGQAAAAAAAAAAAAAAGQAAAAAAAAAZAAAAAAAAAAsAAAA9PT09PT09PT09PQwAAAAAAAAADQAAAAAAAAAAAAAADgAAAAAAAAAbAAAAAAAAAAAAAAAbAAAAAAAAABsAAAAAAAAADAAAAD09PT09PT09PT09PQ0AAAAAAAAADgAAAAAAAAAAAAAADwAAAAAAAAAdAAAAAAAAAAAAAAAdAAAAAAAAAB0AAAAAAAAADQAAAD09PT09PT09PT09PT0",
+					"AQAAAAAAAAABAAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"right_delete",
+					null,
+					"AQAAAB4AAAAAAAAAHgAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAHgAAAAAAAAAeAAAAAAAAAAAAAAAAgF9A"
+				],
+				[
+					15,
+					2,
+					"permute_lines",
+					{
+						"operation": "unique"
+					},
+					"AgAAAAAAAAAAAAAAlAEAAAAAAACUAQAAVGhlIGxzLWNvbW1hbmQKPT09PT09PT09PT09PT0KClRoZSBscyBjb21tYW5kIHdpdGggdGhlIGFyZ3VtZW50cyBsdCBhbmQgdQpscyBsaXN0cyBmaWxlcyBhbmQgZm9sZGVycwpJdCB0YWtlcyBhcmd1bWVudHMgc3VjaCBhcyAtbCAtdCAtdQpUaGVzZSBjYW4gc3RhbmQgYWxvbmUgb3IgYmUgc3VlZCBpbiBjb21iaW5hdGlvbgpscwpscyAtbApscyAtdApscyAtbHQKbHMgLXR1CmxzIC1sdHUKbXRpbWUKYXRpbWUKbCBnaXZlcyBhIGxvbmcgbGlzdGluZwp0IHNvcnRzCnUgc3BlY2lmaWVzIGF0aW1lYXMgdGhlIHRpbWUgKHdoZW4gdXNlZCB3aXRoIHQpIG9yIGRpc3BsYXlzIGF0aW1lICh3aGUKbiB1c2VkIHdpdGggLTEpCmxzIC11IGNvbmZ1c2VzOyBjb252ZXlzIHdyb25nIGltcHJlc3Npb246IHVzZSBscyAtdHUAAAAAAAAAAJQBAAAAAAAAlAEAAFRoZSBscy1jb21tYW5kCj09PT09PT09PT09PT09CgpUaGUgbHMgY29tbWFuZCB3aXRoIHRoZSBhcmd1bWVudHMgbHQgYW5kIHUKbHMgbGlzdHMgZmlsZXMgYW5kIGZvbGRlcnMKSXQgdGFrZXMgYXJndW1lbnRzIHN1Y2ggYXMgLWwgLXQgLXUKVGhlc2UgY2FuIHN0YW5kIGFsb25lIG9yIGJlIHN1ZWQgaW4gY29tYmluYXRpb24KbHMKbHMgLWwKbHMgLXQKbHMgLWx0CmxzIC10dQpscyAtbHR1Cm10aW1lCmF0aW1lCmwgZ2l2ZXMgYSBsb25nIGxpc3RpbmcKdCBzb3J0cwp1IHNwZWNpZmllcyBhdGltZWFzIHRoZSB0aW1lICh3aGVuIHVzZWQgd2l0aCB0KSBvciBkaXNwbGF5cyBhdGltZSAod2hlCm4gdXNlZCB3aXRoIC0xKQpscyAtdSBjb25mdXNlczsgY29udmV5cyB3cm9uZyBpbXByZXNzaW9uOiB1c2UgbHMgLXR1",
+					"AQAAAAAAAAABAAAAHgAAAAAAAAAeAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAB0AAAAAAAAAHgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAHQAAAAAAAAAdAAAAAAAAAP///////+9/"
+				],
+				[
+					20,
+					1,
+					"insert_date",
+					null,
+					"AQAAAB4AAAAAAAAANgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAHgAAAAAAAAAeAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAADYAAAAAAAAANwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAANgAAAAAAAAA2AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"right_delete",
+					null,
+					"AQAAADcAAAAAAAAANwAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAANwAAAAAAAAA3AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					28,
+					1,
+					"right_delete",
+					null,
+					"AQAAAGgBAAAAAAAAaAEAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAaAEAAAAAAABoAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					35,
+					1,
+					"insert",
+					{
+						"characters": "used"
+					},
+					"BQAAAL4AAAAAAAAAvwAAAAAAAAAAAAAAvwAAAAAAAAC/AAAAAAAAAAQAAABzdWVkvwAAAAAAAADAAAAAAAAAAAAAAADAAAAAAAAAAMEAAAAAAAAAAAAAAMEAAAAAAAAAwgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvgAAAAAAAADCAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					44,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAADMBAAAAAAAANAEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAMwEAAAAAAAAzAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					47,
+					1,
+					"right_delete",
+					null,
+					"AQAAAHABAAAAAAAAcAEAAAAAAAABAAAAdw",
+					"AQAAAAAAAAABAAAAcAEAAAAAAABwAQAAAAAAAP///////+9/"
+				],
+				[
+					48,
+					1,
+					"insert",
+					{
+						"characters": "w"
+					},
+					"AQAAAHABAAAAAAAAcQEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcAEAAAAAAABwAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					53,
+					1,
+					"insert",
+					{
+						"characters": "Linux"
+					},
+					"BQAAAAQAAAAAAAAABQAAAAAAAAAAAAAABQAAAAAAAAAGAAAAAAAAAAAAAAAGAAAAAAAAAAcAAAAAAAAAAAAAAAcAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAJAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					54,
+					1,
+					"insert",
+					{
+						"characters": " LS"
+					},
+					"AwAAAAkAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAALAAAAAAAAAAAAAAALAAAAAAAAAAwAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACQAAAAAAAAAJAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					55,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAAwAAAAAAAAADQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADAAAAAAAAAAMAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					56,
+					3,
+					"right_delete",
+					null,
+					"AwAAAA0AAAAAAAAADQAAAAAAAAABAAAAbA0AAAAAAAAADQAAAAAAAAABAAAAcw0AAAAAAAAADQAAAAAAAAABAAAALQ",
+					"AQAAAAAAAAABAAAADQAAAAAAAAANAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					59,
+					1,
+					"insert",
+					{
+						"characters": "======"
+					},
+					"BgAAACMAAAAAAAAAJAAAAAAAAAAAAAAAJAAAAAAAAAAlAAAAAAAAAAAAAAAlAAAAAAAAACYAAAAAAAAAAAAAACYAAAAAAAAAJwAAAAAAAAAAAAAAJwAAAAAAAAAoAAAAAAAAAAAAAAAoAAAAAAAAACkAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIwAAAAAAAAAjAAAAAAAAAP///////+9/"
+				],
+				[
+					68,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAALkBAAAAAAAAugEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuQEAAAAAAAC5AQAAAAAAAP///////+9/"
+				],
+				[
+					72,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAG4AAAAAAAAAbwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAbgAAAAAAAABuAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					77,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAIoAAAAAAAAAiwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAigAAAAAAAACKAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					80,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAK8AAAAAAAAAsAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAArwAAAAAAAACvAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					83,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAOAAAAAAAAAA4QAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA4AAAAAAAAADgAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					86,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAOQAAAAAAAAA5QAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5AAAAAAAAADkAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					89,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAOsAAAAAAAAA7AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6wAAAAAAAADrAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					94,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAPIAAAAAAAAA8wAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA8gAAAAAAAADyAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					97,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAPoAAAAAAAAA+wAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA+gAAAAAAAAD6AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					100,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAAIBAAAAAAAAAwEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAgEAAAAAAAACAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					103,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAAsBAAAAAAAADAEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACwEAAAAAAAALAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					106,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAABIBAAAAAAAAEwEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAEgEAAAAAAAASAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					109,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAABkBAAAAAAAAGgEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAGQEAAAAAAAAZAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					112,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAADEBAAAAAAAAMgEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAMQEAAAAAAAAxAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					115,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAADoBAAAAAAAAOwEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAOgEAAAAAAAA6AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					118,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAJIBAAAAAAAAkwEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAkgEAAAAAAACSAQAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "/home/red/.bash_aliases",
+			"settings":
+			{
+				"buffer_size": 2388,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			}
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"insert",
+					{
+						"characters": "\nalis"
+					},
+					"BQAAAEwDAAAAAAAATQMAAAAAAAAAAAAATQMAAAAAAABOAwAAAAAAAAAAAABOAwAAAAAAAE8DAAAAAAAAAAAAAE8DAAAAAAAAUAMAAAAAAAAAAAAAUAMAAAAAAABRAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAATAMAAAAAAABMAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					1,
+					"insert_completion",
+					{
+						"completion": "alias",
+						"format": "text",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "alias"
+					},
+					"AgAAAE0DAAAAAAAATQMAAAAAAAAEAAAAYWxpc00DAAAAAAAAUgMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAUQMAAAAAAABRAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": " exe"
+					},
+					"BAAAAFIDAAAAAAAAUwMAAAAAAAAAAAAAUwMAAAAAAABUAwAAAAAAAAAAAABUAwAAAAAAAFUDAAAAAAAAAAAAAFUDAAAAAAAAVgMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAUgMAAAAAAABSAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAFYDAAAAAAAAVwMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAVgMAAAAAAABWAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"left_delete",
+					null,
+					"AQAAAFYDAAAAAAAAVgMAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAVwMAAAAAAABXAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": "="
+					},
+					"AQAAAFYDAAAAAAAAVwMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAVgMAAAAAAABWAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"insert_snippet",
+					{
+						"contents": "'$0'"
+					},
+					"AQAAAFcDAAAAAAAAWQMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAVwMAAAAAAABXAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"paste",
+					null,
+					"AQAAAFgDAAAAAAAAYwMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAWAMAAAAAAABYAwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nOrgExtended\n-----------\n\n  * Initial release of Org Extended\n\n    AFTER YOU INSTALL FOR THE FIRST TIME: LET IT RUN FOR ABOUT 60 SECONDS AND RESTART SUBLIME.\n    WE INSTALL SOME DEPENDENCIES AND ARE NOT VERY GOOD ABOUT LETTING YOU KNOW THAT YOU\n    NEED TO RESTART SUBLIME!\n\n    Setup instructions can be found here:\n    https://github.com/ihdavids/orgextended_docs/blob/master/start.org\n\n    Org Mode in Emacs is an extensive lifestyle plugin.\n    This plugin couldn't hope to duplicate the full expanse of\n    Emacs org mode. That said, this plugin attempts to provide\n    some of the amazing functionality found in Emacs org mode\n    right here in sublime text!\n\n    Org Mode IS: https://orgmode.org \n\n    - A document interchange format\n    - A personal wiki\n    - A task and project management toolset\n    - An agenda\n    - A means of building living documents known as literate programming\n    - The backend for blogs, webpages, and an outliner for authors.\n    - A tool for authoring presentations.\n    - A time tracking tool\n    - A spreadsheet and data management tool\n    - And much much more. \n\n    This plugin is written selfishly as a means of helping\n    me stay organized. It comes with no warranty whatsoever.\n    It is my hope that you still find it useful.\n\nTable Editor\n------------\n\n  # Table Editor\n\n  ## Overview\n\n  *Table Editor* is a package for the *Sublime Text 2* and *Sublime Text 3* \n  editor for edit text tables. \n  *Table Editor* is has almost the same keys as Emacs-org mode table editor. \n\n  *Table Editor* allow on easy way edit text table, it allows:\n\n  - navigate with tab/shift tab \n  - insert/delete row\n  - insert/delete column\n  - auto align number cells to right, text cells to left, header cells to center\n  - move column left/right\n  - move row up/down\n  - split long cell\n  - join two rows into one\n  - convert selected CSV region into table\n  - direct support subset of wiki table syntax\n      - Simple\n      - EmacsOrgMode\n      - Pandoc(Grid Tables, Pipe Tables)\n      - Multi Markdown(support colspan in alpha status)\n      - reStructuredText\n      - Textile(support colspan and rowspan in alpha status)\n  - auto detect table syntax by view syntax\n  - switch between different table syntax on the fly\n  - temporary disable/enable table editor for current view\n  - customize table syntax with settings\n  - support CJK : Chinese, Japanese, Korean(alpha status)\n  - show demo film in scratch view\n\n\n  For more information see\n\n  * Sublime Text - Select Preferences->Package Settings->Table Editor->README\n  * Online - https://github.com/vkocubinsky/SublimeTableEditor",
+			"settings":
+			{
+				"buffer_size": 2663,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"insert",
+					{
+						"characters": "Package Control Messages\n========================\n\nOrgExtended\n-----------\n\n  * Initial release of Org Extended\n\n    AFTER YOU INSTALL FOR THE FIRST TIME: LET IT RUN FOR ABOUT 60 SECONDS AND RESTART SUBLIME.\n    WE INSTALL SOME DEPENDENCIES AND ARE NOT VERY GOOD ABOUT LETTING YOU KNOW THAT YOU\n    NEED TO RESTART SUBLIME!\n\n    Setup instructions can be found here:\n    https://github.com/ihdavids/orgextended_docs/blob/master/start.org\n\n    Org Mode in Emacs is an extensive lifestyle plugin.\n    This plugin couldn't hope to duplicate the full expanse of\n    Emacs org mode. That said, this plugin attempts to provide\n    some of the amazing functionality found in Emacs org mode\n    right here in sublime text!\n\n    Org Mode IS: https://orgmode.org \n\n    - A document interchange format\n    - A personal wiki\n    - A task and project management toolset\n    - An agenda\n    - A means of building living documents known as literate programming\n    - The backend for blogs, webpages, and an outliner for authors.\n    - A tool for authoring presentations.\n    - A time tracking tool\n    - A spreadsheet and data management tool\n    - And much much more. \n\n    This plugin is written selfishly as a means of helping\n    me stay organized. It comes with no warranty whatsoever.\n    It is my hope that you still find it useful."
+					},
+					"QQAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAGAAAAAAAAAAZAAAAAAAAAAAAAAAZAAAAAAAAADEAAAAAAAAAAAAAADEAAAAAAAAAMgAAAAAAAAAAAAAAMgAAAAAAAAAzAAAAAAAAAAAAAAAzAAAAAAAAAD4AAAAAAAAAAAAAAD4AAAAAAAAAPwAAAAAAAAAAAAAAPwAAAAAAAABKAAAAAAAAAAAAAABKAAAAAAAAAEsAAAAAAAAAAAAAAEsAAAAAAAAATAAAAAAAAAAAAAAATAAAAAAAAABvAAAAAAAAAAAAAABvAAAAAAAAAHAAAAAAAAAAAAAAAHAAAAAAAAAAcQAAAAAAAAAAAAAAcQAAAAAAAADPAAAAAAAAAAAAAADPAAAAAAAAANAAAAAAAAAAAAAAANAAAAAAAAAAJgEAAAAAAAAAAAAAJgEAAAAAAAAnAQAAAAAAAAAAAAAnAQAAAAAAAEMBAAAAAAAAAAAAAEMBAAAAAAAARAEAAAAAAAAAAAAARAEAAAAAAABFAQAAAAAAAAAAAABFAQAAAAAAAG4BAAAAAAAAAAAAAG4BAAAAAAAAbwEAAAAAAAAAAAAAbwEAAAAAAAC1AQAAAAAAAAAAAAC1AQAAAAAAALYBAAAAAAAAAAAAALYBAAAAAAAAtwEAAAAAAAAAAAAAtwEAAAAAAADuAQAAAAAAAAAAAADuAQAAAAAAAO8BAAAAAAAAAAAAAO8BAAAAAAAALQIAAAAAAAAAAAAALQIAAAAAAAAuAgAAAAAAAAAAAAAuAgAAAAAAAGwCAAAAAAAAAAAAAGwCAAAAAAAAbQIAAAAAAAAAAAAAbQIAAAAAAACqAgAAAAAAAAAAAACqAgAAAAAAAKsCAAAAAAAAAAAAAKsCAAAAAAAAygIAAAAAAAAAAAAAygIAAAAAAADLAgAAAAAAAAAAAADLAgAAAAAAAMwCAAAAAAAAAAAAAMwCAAAAAAAA8QIAAAAAAAAAAAAA8QIAAAAAAADyAgAAAAAAAAAAAADyAgAAAAAAAPMCAAAAAAAAAAAAAPMCAAAAAAAAFgMAAAAAAAAAAAAAFgMAAAAAAAAXAwAAAAAAAAAAAAAXAwAAAAAAACwDAAAAAAAAAAAAACwDAAAAAAAALQMAAAAAAAAAAAAALQMAAAAAAABYAwAAAAAAAAAAAABYAwAAAAAAAFkDAAAAAAAAAAAAAFkDAAAAAAAAaAMAAAAAAAAAAAAAaAMAAAAAAABpAwAAAAAAAAAAAABpAwAAAAAAALEDAAAAAAAAAAAAALEDAAAAAAAAsgMAAAAAAAAAAAAAsgMAAAAAAAD1AwAAAAAAAAAAAAD1AwAAAAAAAPYDAAAAAAAAAAAAAPYDAAAAAAAAHwQAAAAAAAAAAAAAHwQAAAAAAAAgBAAAAAAAAAAAAAAgBAAAAAAAADoEAAAAAAAAAAAAADoEAAAAAAAAOwQAAAAAAAAAAAAAOwQAAAAAAABnBAAAAAAAAAAAAABnBAAAAAAAAGgEAAAAAAAAAAAAAGgEAAAAAAAAggQAAAAAAAAAAAAAggQAAAAAAACDBAAAAAAAAAAAAACDBAAAAAAAAIQEAAAAAAAAAAAAAIQEAAAAAAAAvgQAAAAAAAAAAAAAvgQAAAAAAAC/BAAAAAAAAAAAAAC/BAAAAAAAAPsEAAAAAAAAAAAAAPsEAAAAAAAA/AQAAAAAAAAAAAAA/AQAAAAAAAAsBQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2,
+					1,
+					"insert",
+					{
+						"characters": "\n\nTable Editor\n------------\n\n  # Table Editor\n\n  ## Overview\n\n  *Table Editor* is a package for the *Sublime Text 2* and *Sublime Text 3* \n  editor for edit text tables. \n  *Table Editor* is has almost the same keys as Emacs-org mode table editor. \n\n  *Table Editor* allow on easy way edit text table, it allows:\n\n  - navigate with tab/shift tab \n  - insert/delete row\n  - insert/delete column\n  - auto align number cells to right, text cells to left, header cells to center\n  - move column left/right\n  - move row up/down\n  - split long cell\n  - join two rows into one\n  - convert selected CSV region into table\n  - direct support subset of wiki table syntax\n      - Simple\n      - EmacsOrgMode\n      - Pandoc(Grid Tables, Pipe Tables)\n      - Multi Markdown(support colspan in alpha status)\n      - reStructuredText\n      - Textile(support colspan and rowspan in alpha status)\n  - auto detect table syntax by view syntax\n  - switch between different table syntax on the fly\n  - temporary disable/enable table editor for current view\n  - customize table syntax with settings\n  - support CJK : Chinese, Japanese, Korean(alpha status)\n  - show demo film in scratch view\n\n\n  For more information see\n\n  * Sublime Text - Select Preferences->Package Settings->Table Editor->README\n  * Online - https://github.com/vkocubinsky/SublimeTableEditor"
+					},
+					"SwAAACwFAAAAAAAALQUAAAAAAAAAAAAALQUAAAAAAAAuBQAAAAAAAAAAAAAuBQAAAAAAADoFAAAAAAAAAAAAADoFAAAAAAAAOwUAAAAAAAAAAAAAOwUAAAAAAABHBQAAAAAAAAAAAABHBQAAAAAAAEgFAAAAAAAAAAAAAEgFAAAAAAAASQUAAAAAAAAAAAAASQUAAAAAAABZBQAAAAAAAAAAAABZBQAAAAAAAFoFAAAAAAAAAAAAAFoFAAAAAAAAWwUAAAAAAAAAAAAAWwUAAAAAAABoBQAAAAAAAAAAAABoBQAAAAAAAGkFAAAAAAAAAAAAAGkFAAAAAAAAagUAAAAAAAAAAAAAagUAAAAAAAC2BQAAAAAAAAAAAAC2BQAAAAAAALcFAAAAAAAAAAAAALcFAAAAAAAA1gUAAAAAAAAAAAAA1gUAAAAAAADXBQAAAAAAAAAAAADXBQAAAAAAACQGAAAAAAAAAAAAACQGAAAAAAAAJQYAAAAAAAAAAAAAJQYAAAAAAAAmBgAAAAAAAAAAAAAmBgAAAAAAAGQGAAAAAAAAAAAAAGQGAAAAAAAAZQYAAAAAAAAAAAAAZQYAAAAAAABmBgAAAAAAAAAAAABmBgAAAAAAAIYGAAAAAAAAAAAAAIYGAAAAAAAAhwYAAAAAAAAAAAAAhwYAAAAAAACcBgAAAAAAAAAAAACcBgAAAAAAAJ0GAAAAAAAAAAAAAJ0GAAAAAAAAtQYAAAAAAAAAAAAAtQYAAAAAAAC2BgAAAAAAAAAAAAC2BgAAAAAAAAYHAAAAAAAAAAAAAAYHAAAAAAAABwcAAAAAAAAAAAAABwcAAAAAAAAhBwAAAAAAAAAAAAAhBwAAAAAAACIHAAAAAAAAAAAAACIHAAAAAAAANgcAAAAAAAAAAAAANgcAAAAAAAA3BwAAAAAAAAAAAAA3BwAAAAAAAEoHAAAAAAAAAAAAAEoHAAAAAAAASwcAAAAAAAAAAAAASwcAAAAAAABlBwAAAAAAAAAAAABlBwAAAAAAAGYHAAAAAAAAAAAAAGYHAAAAAAAAkAcAAAAAAAAAAAAAkAcAAAAAAACRBwAAAAAAAAAAAACRBwAAAAAAAL8HAAAAAAAAAAAAAL8HAAAAAAAAwAcAAAAAAAAAAAAAwAcAAAAAAADOBwAAAAAAAAAAAADOBwAAAAAAAM8HAAAAAAAAAAAAAM8HAAAAAAAA4wcAAAAAAAAAAAAA4wcAAAAAAADkBwAAAAAAAAAAAADkBwAAAAAAAAwIAAAAAAAAAAAAAAwIAAAAAAAADQgAAAAAAAAAAAAADQgAAAAAAABECAAAAAAAAAAAAABECAAAAAAAAEUIAAAAAAAAAAAAAEUIAAAAAAAAXQgAAAAAAAAAAAAAXQgAAAAAAABeCAAAAAAAAAAAAABeCAAAAAAAAJoIAAAAAAAAAAAAAJoIAAAAAAAAmwgAAAAAAAAAAAAAmwgAAAAAAADGCAAAAAAAAAAAAADGCAAAAAAAAMcIAAAAAAAAAAAAAMcIAAAAAAAA+wgAAAAAAAAAAAAA+wgAAAAAAAD8CAAAAAAAAAAAAAD8CAAAAAAAADYJAAAAAAAAAAAAADYJAAAAAAAANwkAAAAAAAAAAAAANwkAAAAAAABfCQAAAAAAAAAAAABfCQAAAAAAAGAJAAAAAAAAAAAAAGAJAAAAAAAAmQkAAAAAAAAAAAAAmQkAAAAAAACaCQAAAAAAAAAAAACaCQAAAAAAALwJAAAAAAAAAAAAALwJAAAAAAAAvQkAAAAAAAAAAAAAvQkAAAAAAAC+CQAAAAAAAAAAAAC+CQAAAAAAAL8JAAAAAAAAAAAAAL8JAAAAAAAA2QkAAAAAAAAAAAAA2QkAAAAAAADaCQAAAAAAAAAAAADaCQAAAAAAANsJAAAAAAAAAAAAANsJAAAAAAAAKAoAAAAAAAAAAAAAKAoAAAAAAAApCgAAAAAAAAAAAAApCgAAAAAAAGcKAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALAUAAAAAAAAsBQAAAAAAAAAAAAAAAPC/"
+				]
+			]
 		}
 	],
 	"build_system": "",
@@ -47,6 +542,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
 			[
 				"Snippet: ",
 				"Snippet: Lorem ipsum"
@@ -84,6 +583,9 @@
 	],
 	"file_history":
 	[
+		"/home/red/Documents/emacs_elements_chapter_2/bookmark+.org",
+		"/home/red/bin/bookmark+.md",
+		"/media/red/TIMESHIFT/red/LINUX.org",
 		"/home/red/Documents/Passwords.txt",
 		"/mnt/753E7CCF09F47F77/Search_all/Linux files-20221225T162203Z-001/Linux files/contacts.md",
 		"/mnt/753E7CCF09F47F77/older_documents/Computing/Last Debian/.hyperb/HYPB~",
@@ -114,7 +616,7 @@
 	],
 	"find":
 	{
-		"height": 31.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -128,6 +630,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$1",
+			"ls command",
+			"ls "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -174,36 +679,95 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "what_am_I_going_to_do_today_hyperbole_1.org",
-					"selected": true,
-					"semi_transient": true,
+					"file": "The ls-command.md",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3848,
+						"buffer_size": 457,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								403,
+								403
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"auto_name": "The ls-command",
+							"syntax": "Packages/MarkdownEditing/syntaxes/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/red/.bash_aliases",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2388,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								768,
+								768
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Bash.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2663,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2663,
+								2663
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1026.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -215,7 +779,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 31.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -252,7 +816,7 @@
 	"project": "emacs_elements.sublime-project",
 	"replace":
 	{
-		"height": 58.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -272,7 +836,7 @@
 		[
 			[
 				"",
-				"~/snippets.sublime-project"
+				"~/Documents/emacs_elements_chapter_2/emacs_elements.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -293,7 +857,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 232.0,
 	"status_bar_visible": true,
 	"template_settings":
