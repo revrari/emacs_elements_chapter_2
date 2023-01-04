@@ -13,8 +13,6 @@ Program by Drew Adams, author of icicles, showkey, and dired+
 * Installation
  - 8 libraries one must download + 4 optional libraries. I personally have downloaded them all.
  - Can be downloaded here: https://www.emacswiki.org/emacs/BookmarkPlus#h5o-51 from EmacsWiki
- - MELPA has decided to no longer accept Lisp libraries from EmacsWiki. Sadly, this includes Drew's libraries, even though they are read-only and therefore not insecure.
- - https://drive.google.com/drive/folders/1OMBPesRBH9Tb-idu9MtKM7nq2iBHTRtA?usp=sharing
  - Add this to =init.el=
    #+begin_example
    (add-to-list 'load-path "c:/red/.emacs.d/pack/bookmark+")
