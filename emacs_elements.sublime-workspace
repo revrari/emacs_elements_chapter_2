@@ -8,11 +8,30 @@
 	"buffers":
 	[
 		{
-			"file": "deal_traling_whitespace_emacs.org",
+			"file": "paypal",
 			"settings":
 			{
-				"buffer_size": 1557,
+				"buffer_size": 101,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					2,
+					1,
+					"right_delete",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAAKAAAAKiBQYXlQYWwKCg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAAAAAAA"
+				]
+			]
+		},
+		{
+			"file": "what_am_I_going_to_do_today_hyperbole_1.org",
+			"settings":
+			{
+				"buffer_size": 3848,
 				"line_ending": "Unix"
 			}
 		}
@@ -132,12 +151,11 @@
 			[
 				{
 					"buffer": 0,
-					"file": "deal_traling_whitespace_emacs.org",
-					"selected": true,
-					"semi_transient": true,
+					"file": "paypal",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1557,
+						"buffer_size": 101,
 						"regions":
 						{
 						},
@@ -156,6 +174,38 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "what_am_I_going_to_do_today_hyperbole_1.org",
+					"selected": true,
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3848,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
 					"stack_multiselect": false,
 					"type": "text"
@@ -169,7 +219,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 40.0
 	},
 	"layout":
 	{
@@ -222,7 +272,7 @@
 		[
 			[
 				"",
-				"~/Desktop/bash.sublime-project"
+				"~/snippets.sublime-project"
 			]
 		],
 		"width": 380.0
