@@ -1,0 +1,72 @@
+The Ex Editor -- My early notes based on my ex videos for emacselements
+///////////////////////////////
+2022/06/25 08:05:27////////////
+///////////////////////////////
+
+An editor developed by Bill Joy in 1976.
+- To remove double spaces: g/ *// /g
+It was based on a program called EM,
+which in turn was an improvement of ED
+itself developed by Ken Thompson,
+one of the original authors of Unix.
+Ex is a simple but useful tEXt editor
+which itself later became the basis of Vi
+which is not to be confused with VIM.
+Original Vi was written in 1976 also by Bill Joy.
+released first in 1991.
+EX is a very simple editor helpful for configuring system files.
+It is the default editor in OpenBSD.
+Its strange style arose from limitations imposed by computing at the time.
+- starting up EX
+- Lines are not automatically shown at startup
+- set line numbers - .exrc
+- navigation: beginning/end of file 0/$
+- Go to a specific line
+- to copy(co), move(m), change(c)
+- undo a change (u)
+- to append text: a
+- to save and quit: w q
+- find a word /word g/word
+- to substitute s/word/ newword/g
+- to globally substitute g/word/s//newword/g
+- regex expressions, examples:
+whole words \<word\>
+empty lines ^$
+letters and numbers [0-9a-z]
+not [^a-zA-Z0-9]
+Replace spaces at the beg. of a line: g/^ */s///
+Typing vi at the prompt changes to Vi Mode.
+- Write
+Replace trailing whitespace: g/ *$///
+Delete all blank lines: g/^$/d (d = delete)
+proantidisestablishmentarianism
+
+ADVANCED EX COMMANDS
+Very few/no customizations required
+Execute a shell command, or filter lines through a shell commands:
+[range]! argument(s)
+To add a comment to the file: "
+Join lines: :[range of lines] j
+Previous file: :prev
+Next file: :n
+Read the contents of another file after line in current file: 1r [filename]
+Show current version of ex: :ve
+Write a range of lines to another file -- 1,4 w >> [filename]
+Go from ex to vi :vi
+Go from vi to ex: Q
+Shift lines: >> <<
+-- This is useful for indentation
+Show the last line: =
+Change directory: chdir/cd
+Edit a different file: :e
+Help for any ex command: :exu[sage]
+Display and optionally change the file name: f [newname]
+Append after line X: :a
+Insert before line X: :i
+Create mark: :ma[x]
+Goto mark '[x]
+Make an excrc file: :mkexrc (This writes abbrevs, editor options
+and maps to specific file)
+Create abbreviations: :ab teh the
+Preserve current state of the file and later recover with ex -r::pre
+
