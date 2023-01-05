@@ -1,15 +1,16 @@
 Notes on the Ed Editor
-Originally called QED
+----------------------
+Originally adapted from QED
 Easy to use, hard to learn
 Authors: D. M. Ritchie and K. L. Thompson
-There are anumber of commands each of which is one character long.
+There are a number of commands each of which is one character long.
 Each command is preceded by zero or more addresses
 n = prints the addressed lines
 e.g. 1,5n ; ,n
 P = toggles the command prompt on and off
 a=append
 specifying lines in the current buffer.
-Some commands are follwed by paramenters as well.
+Some commands are followed by paramenters as well.
 Hence: ADDRESS | COMMAND | PARAMETER
 Regular expressions are a unique feature of QED.
 Used to search for text and/or replace it
@@ -18,19 +19,16 @@ $ matches the null character at the end of the line
 . matches any character except <nl>
 [<string>] matches any characters in the string and no others
 [^<string>] matches any character EXCEPT the characters in the string
-But one is better off using the v or V command
+But one is better off using the V command
 For example: v/[A-Z]/ -- finds all lines that do not contain capital letters
-\\* matches any number of occurances of adjacent text including zero - frequency
+\\* matches any number of occurences of adjacent text including zero - frequency
 \| searches for alternatives
 Parentheses alter the ORDER of the regex
-No regular expression will match text spread across
-than one line.
+No regular expression will match text spread across more than one line.
 / ... / sets the bounds of the regex
 Part 2
 ======
 The version of Ed I am using is Gnu Ed version 1.17
-Changes between versions
-Something has been lost
 * LINE NUMBERS
 The 1st line is numbered 1
 The value of . is the current line
@@ -81,7 +79,7 @@ The man told the woman she was beautiful.
 To read a file into the current document use the "r" command:
 e.g. r ~/test
 !clear
-Here is the syntx for substitutions:
+Here is the syntax for substitutions:
 S) (.,.) S/<regexp>/<string>/ Substitute
 The character "&" in the <string> has a value equal to the text matched by the <regexp>.
 Any character but space or <nl> may be used instead of "/" to bound the <regexp>.
@@ -93,9 +91,10 @@ With this command the value of "." is not changed.
 w
 The z command scrolls text X number of lines from the current line:
 e.g. Z10n scrolls 10 lines and prints line numbers
-Mon Jul  5 18:31:22 SAST 2021
 e - edit a different file. This powerful command allows you to go from one file to another
- without leaving Ed!
+without leaving Ed.
+Part 3
+------
 "scrolling" -- 1z25n
 Navigation: P and N
 .,. - prints a range pf lines
