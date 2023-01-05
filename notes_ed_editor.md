@@ -1,5 +1,4 @@
-Notes on the Ed Editor  
-----------------------  
+# Notes on the Ed Editor  
 Originally adapted from QED  
 Easy to use, hard to learn  
 Authors: D. M. Ritchie and K. L. Thompson  
@@ -26,8 +25,7 @@ For example: v/[A-Z]/ -- finds all lines that do not contain capital letters
 Parentheses alter the ORDER of the regex  
 No regular expression will match text spread across more than one line.  
 / ... / sets the bounds of the regex  
-Part 2  
-======  
+# Part 2  
 The version of Ed I am using is Gnu Ed version 1.17  
 * LINE NUMBERS  
 The 1st line is numbered 1  
@@ -93,8 +91,7 @@ The z command scrolls text X number of lines from the current line:
 e.g. Z10n scrolls 10 lines and prints line numbers  
 e - edit a different file. This powerful command allows you to go from one file to another  
 without leaving Ed.  
-Part 3  
-------  
+# Part 3  
 "scrolling" -- 1z25n  
 Navigation: P and N  
 .,. - prints a range pf lines  
