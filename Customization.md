@@ -1,6 +1,5 @@
-#+title: Customization  
-#+created: [2021-04-19 Mon]  
-#+last_modified: Fri 06 Jan 2023 10:07:46  
+# Customization  
+Fri 06 Jan 2023 10:07:46  
   
 Emacs Manual p. 443-451.  
 Emacs has many settings one can change.  
@@ -36,10 +35,8 @@ one can add comments
   
 Customizations are saved usu. to *init.el* unless one specifies a customization file  
   
-#+begin_src  
 ;; CUSTOM-FILE  
 (setq custom-file "c:/rari/.emacs.d/.emacs-custom.el")  
 (load custom-file)  
-#+end_src  
-  
+
   
