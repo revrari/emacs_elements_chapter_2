@@ -22,7 +22,6 @@ default values have changed since Emacs version /version/).
 *M-x customize-saved* (set up a customization buffer containing all settings that you have saved with  
 customization buffers) *great*  
 
-#+begin_example  
 name of variable  
 value  
 customization state  
@@ -31,7 +30,6 @@ customize for session (one can also use C-c C-c OR Apply)
 save for future sessions (one can also use C-x C-s OR Apply and Save)  
 can restore by selecting "erase customization"  
 one can add comments  
-#+end_example  
   
 Customizations are saved usu. to *init.el* unless one specifies a customization file  
   
