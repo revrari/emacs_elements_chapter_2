@@ -1,6 +1,5 @@
 # Mastering Customization in Emacs
 <!-- Fri 06 Jan 2023 10:07:46   -->
-  
 Emacs Manual p. 443-451.  
 Emacs has many settings one can change.  
 Most settings are customizable variables, which are also called user options.  
@@ -36,4 +35,3 @@ Customizations are saved usu. to *init.el* unless one specifies a customization 
 ;; CUSTOM-FILE  
 (setq custom-file "c:/rari/.emacs.d/.emacs-custom.el")  
 (load custom-file)  
- 
