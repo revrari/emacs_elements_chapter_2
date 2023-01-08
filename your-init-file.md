@@ -1,0 +1,73 @@
+# Your Emacs init file
+
+## Primary choices
+
+DOT EMACS .emacs – in the root of your home folder ~/Or,INIT.EL – in ~/.emacs.d
+
+## Secondary choices
+
+use-package with its own unique syntax allows you to isolate package configuration 
+install packages limits: putting code into use-package syntax is not always straightforward 
+why use-package is fast: it delays the loading of packages 
+
+(eval-when-compile (require 'use-package))
+
+Sacha Chua and John Wiegley
+
+https://www.youtube.com/watch?v=2TSKxxYEbII&amp;ab_channel=SachaChua
+
+https://github.com/jwiegley/use-package
+
+## Important Question
+
+For customisations should I edit dot Emacs directly? Or should I use the Emacs built in customization options?
+
+E.g.
+
+(setq package-archives
+      '(("org" . "https://orgmode.org/elpa/")
+     ("melpa" . "https://melpa.org/packages/")))
+
+`setq` allows one to directly modify several different variables in one expression, organize one's configuration and make one's init easily transferable across systems.
+
+Or,M-x customize-set-variable
+
+E.g. gnus-init-file
+
+Or, Customize UI *package-archives*;
+
+M-x customize
+
+(defalias 'cz 'customize)
+
+setq versus customize
+
+Drew Adams argues for customize
+
+M-x customize-set-variable is better for a user option than using setq in general.
+
+See https://emacs.stackexchange.com/a/106/105 for the technical issues
+
+If you are going to use **customize** then have your customized settings go into a file different from your init.el file.
+
+(setq custom-file **~/.emacs.d/.emacs-custom.el**)
+
+(load custom-file)
+
+This way one's hand-written code is separate from the automatic code written by customize (Drew)
+
+Emacs start-up time
+
+M-x emacs-init-time
+
+Summary 
+
+.emacs or init.el
+
+Use-package or not
+
+The choice of a package manager
+
+setq versus customize
+
+
