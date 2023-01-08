@@ -1,4 +1,4 @@
-# Some keybaord simple tweaks that changed the way I use Emacs
+# Some keyboard simple tweaks that changed the way I use Emacs
 
 (defun config-visit ()
  (interactive)
