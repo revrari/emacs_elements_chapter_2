@@ -19,8 +19,7 @@ C-u w -- relative
 1) item 1
 2) item 2
 
-This text would interrupt the list and the next item would be 1) on a
-new list
+This text would interrupt the list and the next item would be 1) on a new list
 
 3) [@3] This will be item 3
 4) and this will be item 4
