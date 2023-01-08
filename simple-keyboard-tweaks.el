@@ -1,5 +1,4 @@
-# Some keyboard simple tweaks that changed the way I use Emacs
-
+;; Some keyboard simple tweaks that changed the way I use Emacs
 (defun config-visit ()
  (interactive)
  (find-file "c:/red/.emacs.default/init.el"))
