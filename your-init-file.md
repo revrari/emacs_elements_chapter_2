@@ -69,5 +69,3 @@ Use-package or not
 The choice of a package manager
 
 setq versus customize
-
-

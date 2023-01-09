@@ -1,0 +1,170 @@
+#+title: abbrev-mode
+#+ROAM_TAGS: abbrev abbevs abbrev-mode
+#+created: [2021-04-09 Fri]
+#+last_modified: [2021-04-09 Fri 04:45]
+
+- Create and expand abbreviations to make your typing easier
+- Use =yasnippet= for code expansions or =yankpad=
+- But abbrev-mode can do almost anything you want
+  
+* One must generally have abbrev-mode activated to expand abbrevs
+
+=(setq-default abbrev-mode t)=
+
+* Different kinds of abbrevs
+
+Abbrevs can be *mode-specific*, which are active only in one major mode.
+
+e.g. can define abbrevs just for =org-mode=
+
+e.g. tle 
+
+#+title: 
+#+roam_tags:
+#+STARTUP: showall
+#+OPTIONS: \\n:t" 
+
+Abbrevs can also have *global definitions* that are active in all major modes
+
+Note: A *mode-specific definition* for the current major mode overrides a global definition if they are the same.
+
+* How to define abbrevs
+
+*Main way*
+
+=define-global-abbrev=
+=define-mode-abbrev=
+
+It reads two arguments, the abbrev, and its expansion
+I.e. type the abbrev first then the expansion
+
+*Second way*
+
+define abbrevs from within your text *C-x a g* and *C-x a l*
+
+=C-x a g=
+=C-x a l=
+
+Adds word/s before point
+
+#+begin_example
+hello =C-x a g= adds the word before point
+hello there =C-u 2 C-x a g= adds 2 words before point
+"Hello there Bob" (selected) =C-u 0 C-x a g= adds region (for this to work one must use mouse)
+#+end_example 
+
+* To change the definition of an abbrev
+
+Just make a new definition
+
+* To remove an abbrev definition, just give it a negative argument
+
+e.g. "ac1" "aristocracy"
+
+C-u - C-x a g
+C-u - C-x a l (if abbrev is mode specific)
+
+* How to expand an abbreviation
+
+aristocracy?
+
+Type it in buffer, hit space, OR any punctuation mark that does not form part of a word (, . ")
+
+*Note: Abbrev expansions preserves case!*
+
+aristocracy
+
+Aristocracy 
+
+#+begin_example
+Ac1 expands to Aristocracy
+ac1 expands to aristocracy
+#+end_example
+
+* To PREVENT an abbreviation type C-q after the abbreviation
+
+ac1 is an abbreviation
+
+#+begin_example
+ac1 C-q renders 'ac1' not 'aristocracy'
+#+end_example
+
+* To REVERT an abbreviation =M-x unexpand-abbrev=
+
+ac1 
+
+(global-set-key (kbd "C-x a u") 'unexpand-abbrev)
+
+But it is easier simply to hit "undo" and type C-q
+
+* Examining Abbrevs
+
+list-abbrevs
+
+*Making sense of the entries*
+
+"abililty"     0    "ability"
+"abm"	       5    "Abraham"
+"aboslute"     0    "absolute"
+
+<abbrev> <number> <expansion>
+
+*Important* The number in the row is the number of times the abbrev has been expanded. Emacs helps you see which abbreviations you actually use. You can delete ones you do not use often, thereby keeping the abbrevs file manageable.
+
+* To edit abbrevs
+
+=edit-abbrevs=
+
+The buffer is called *Abbrevs*
+This is called "Edit-Abbrev-Mode"
+
+* Save abbrevs across sessions
+
+- Set your default abbrev file--but there is no need to change defaults
+
+<abbrev-file-name>
+"~/.emacs.d/abbrev_defs"
+
+The set variable:
+
+='(save-abbrevs 'silently)=
+
+This allows you to save your abbrevs automatically and silently (i.e. Emacs will not ask you.)
+
+* GREAT TWEAK
+
+Thanks to Tom:
+
+https://stackoverflow.com/questions/15375759/how-to-control-cursor-placement-in-emacs-abbrev-expansion
+
+;; ABBREV-MODE
+ (defadvice expand-abbrev (after my-expand-abbrev activate)
+   ;; if there was an expansion
+   (if ad-return-value
+       ;; start idle timer to ensure insertion of abbrev activator
+       ;; character (e.g. space) is finished
+       (run-with-idle-timer 0 nil
+			    (lambda ()
+			      ;; if there is the string "@@" in the
+			      ;; expansion then move cursor there and
+			      ;; delete the string
+			      (let ((cursor "@@"))
+				(if (search-backward cursor last-abbrev-location t)
+				    (delete-char (length cursor))))))))
+
+As an example type 'eg' and 'src'
+
+#+begin_example
+@@
+#+end_example
+
+#+begin_example
+
+#+end_example
+
+#+begin_src
+
+#+end_src 
+
+If you find this channel helpful please consider supporting me via PayPal: 
+https://paypal.me/revrari
