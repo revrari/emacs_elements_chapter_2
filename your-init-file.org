@@ -1,5 +1,4 @@
 #+title: Your Emacs init file
-#+OPTIONS: \n:t
 [2023-01-09 Mon]
 
 * Primary choices
