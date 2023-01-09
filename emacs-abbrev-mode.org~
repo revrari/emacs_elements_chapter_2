@@ -1,7 +1,6 @@
 #+title: abbrev-mode
-#+ROAM_TAGS: abbrev abbevs abbrev-mode
 #+created: [2021-04-09 Fri]
-#+last_modified: [2021-04-09 Fri 04:45]
+#+last_modified: [2023-01-09 Mon]
 
 - Create and expand abbreviations to make your typing easier
 - Use =yasnippet= for code expansions or =yankpad=

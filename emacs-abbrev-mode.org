@@ -3,18 +3,18 @@
 #+last_modified: [2023-01-09 Mon]
 
 - Create and expand abbreviations to make your typing easier
-- Use =yasnippet= for code expansions or =yankpad=
+- Use yasnippet for code expansions or yankpad
 - But abbrev-mode can do almost anything you want
   
 * One must generally have abbrev-mode activated to expand abbrevs
 
-=(setq-default abbrev-mode t)=
+(setq-default abbrev-mode t)
 
 * Different kinds of abbrevs
 
 Abbrevs can be *mode-specific*, which are active only in one major mode.
 
-e.g. can define abbrevs just for =org-mode=
+e.g. can define abbrevs just for org-mode
 
 e.g. tle 
 
@@ -31,8 +31,8 @@ Note: A *mode-specific definition* for the current major mode overrides a global
 
 *Main way*
 
-=define-global-abbrev=
-=define-mode-abbrev=
+define-global-abbrev
+define-mode-abbrev
 
 It reads two arguments, the abbrev, and its expansion
 I.e. type the abbrev first then the expansion
@@ -41,15 +41,15 @@ I.e. type the abbrev first then the expansion
 
 define abbrevs from within your text *C-x a g* and *C-x a l*
 
-=C-x a g=
-=C-x a l=
+C-x a g
+C-x a l
 
 Adds word/s before point
 
 #+begin_example
-hello =C-x a g= adds the word before point
-hello there =C-u 2 C-x a g= adds 2 words before point
-"Hello there Bob" (selected) =C-u 0 C-x a g= adds region (for this to work one must use mouse)
+hello C-x a g adds the word before point
+hello there C-u 2 C-x a g adds 2 words before point
+"Hello there Bob" (selected) C-u 0 C-x a g adds region (for this to work one must use mouse)
 #+end_example 
 
 * To change the definition of an abbrev
@@ -88,7 +88,7 @@ ac1 is an abbreviation
 ac1 C-q renders 'ac1' not 'aristocracy'
 #+end_example
 
-* To REVERT an abbreviation =M-x unexpand-abbrev=
+* To REVERT an abbreviation M-x unexpand-abbrev
 
 ac1 
 
@@ -112,7 +112,7 @@ list-abbrevs
 
 * To edit abbrevs
 
-=edit-abbrevs=
+edit-abbrevs
 
 The buffer is called *Abbrevs*
 This is called "Edit-Abbrev-Mode"
@@ -126,7 +126,7 @@ This is called "Edit-Abbrev-Mode"
 
 The set variable:
 
-='(save-abbrevs 'silently)=
+'(save-abbrevs 'silently)
 
 This allows you to save your abbrevs automatically and silently (i.e. Emacs will not ask you.)
 
