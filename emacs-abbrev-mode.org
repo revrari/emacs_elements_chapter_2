@@ -136,6 +136,7 @@ Thanks to Tom:
 
 https://stackoverflow.com/questions/15375759/how-to-control-cursor-placement-in-emacs-abbrev-expansion
 
+#+begin_src emacs-lisp
 ;; ABBREV-MODE
  (defadvice expand-abbrev (after my-expand-abbrev activate)
    ;; if there was an expansion
@@ -150,6 +151,7 @@ https://stackoverflow.com/questions/15375759/how-to-control-cursor-placement-in-
 			      (let ((cursor "@@"))
 				(if (search-backward cursor last-abbrev-location t)
 				    (delete-char (length cursor))))))))
+#+end_src
 
 As an example type 'eg' and 'src'
 
