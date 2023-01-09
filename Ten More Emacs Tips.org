@@ -4,22 +4,22 @@
 
 * Tip 1
 
-Delete empty directories in Dired\\
-You could just use the find tool.\\
-M-! find . -empty -type d -delete <RET>\\
-Then hit "g" for refresh.\\
+Delete empty directories in Dired
+You could just use the find tool.
+M-! find . -empty -type d -delete <RET>
+Then hit "g" for refresh.
 Here it is wrapped in a function that confirms the delete
 
 * Tip 2
 
-C-M l -- heuristic scrolling\\
-C-l -- current line becomes centre line\\
+C-M l -- heuristic scrolling
+C-l -- current line becomes centre line
 Recentre Positions
 
 * Tip 3
 
-Minibuffer commands\\
-M-x dired\\
+Minibuffer commands
+M-x dired
 Repeat commands: C-x Esc Esc
 
 * Tip 4
@@ -40,13 +40,13 @@ C-x C-m f
 
 Cycle org lists
 
-+ org-cycle-list-bullet\\
-+ org-cycle-list-bullet\\
++ org-cycle-list-bullet
++ org-cycle-list-bullet
 + org-cycle-list-bullet
 
 * Tip 7
 
-Auto-expand without an external package\\
+Auto-expand without an external package
 One can use M-/ (dabbrev-expand)
 
 * Tip 8
