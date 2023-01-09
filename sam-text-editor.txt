@@ -1,0 +1,30 @@
+THE TEXT EDITOR SAM
+
+By Rob Pike
+For plan9 documentation: 9p.io/plan9/
+git clone https://github.com/9fans/plan9port plan9
+Install with ./INSTALL
+Add these to your profile environment:
+PLAN9=/home/red/bin/plan9port export PLAN9
+PATH=$PATH:$PLAN9/bin export PATH
+I had first to open "rc" from my linux terminal
+and then from there run:
+9p ls font to see the list of fonts
+I then tried font=/mnt/font/DejavuSansMono/14/font sam
+This worked.
+From there went back to my Linux term and ran:
+alias sam='font=/mnt/font/GoMono/15/font sam'
+Can run within a bitmap terminal and without a bitmap terminal: sam -d
+Sam edits uninterpreted ASCII text. 
+Joins the styles of the UNIX text editor ed6,7 with that of interactive cut-and-paste editors by providing a comfortable mouse-driven interface to a program with a solid command language driven by regular expressions.
+Influence by the editors jim and by mux.
+An editor in two halves: command (sam window) and the editing interface with bitmap display.
+Sam is a text editor for multiple files. 
+
+File names may be provided when it is invoked:
+sam file1 file2 …
+
+RESOURCES
+http://doc.cat-v.org/bell_labs/sam_lang_tutorial/
+http://doc.cat-v.org/plan_9/4th_edition/papers/sam/
+
