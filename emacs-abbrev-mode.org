@@ -153,17 +153,17 @@ https://stackoverflow.com/questions/15375759/how-to-control-cursor-placement-in-
 
 As an example type 'eg' and 'src'
 
-#+begin_example
+​#+begin_example
 @@
-#+end_example
+​#+end_example
 
-#+begin_example
+​#+begin_example
 
-#+end_example
+​#+end_example
 
-#+begin_src
+​#+begin_src
 
-#+end_src 
+​#+end_src 
 
 If you find this channel helpful please consider supporting me via PayPal: 
 https://paypal.me/revrari
