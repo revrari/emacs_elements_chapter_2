@@ -70,3 +70,4 @@ Add a package manually:
 xah-make-backup
 
 http://xahlee.info/emacs/emacs/elisp_make-backup.html
+

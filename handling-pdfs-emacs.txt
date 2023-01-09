@@ -1,6 +1,5 @@
-Handling pdfs in Emacs
-======================
-doc-view [docview] 
+Handling pdfs in Emacs: docview
+===============================
 
 Why I do not use pdf-tools
 

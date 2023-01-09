@@ -39,5 +39,4 @@ Customizations are saved usu. to *init.el* unless one specifies a customization 
 #+begin_src emacs-lisp
 (setq custom-file "c:/rari/.emacs.d/.emacs-custom.el")
 (load custom-file)
-#+end_src 
-
+#+end_src

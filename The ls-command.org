@@ -27,3 +27,4 @@ l gives a long listing
 t sorts
 u specifies atime as the time (when used with t) or displays atime (when used with -1)
 ls -u confuses; conveys wrong impression: use ls -tu
+
