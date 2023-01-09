@@ -1,0 +1,85 @@
+Handling pdfs in Emacs
+======================
+doc-view	[docview] 
+
+Why I do not use pdf-tools
+
+• Installation issues
+• Does not work properly with bookmark+
+• Rendering of images sometimes blurry
+
+What I do use
+• Bookmark+
+• DocView
+
+DocView mode works just fine. It is a major mode for viewing DVI, PostScript (PS), PDF, OpenDocument, and Microsoft Office documents
+
+https://www.emacswiki.org/emacs/DocViewMode
+
+Renders pdfs into images
+
+One needs external programs to allow one to view pdfs and odts
+
+For pdfs mudraw is faster than ghostscript
+https://mupdf.com/docs/manual-mutool-convert.html
+Add path to emacs exec-path
+
+To view odf and docx
+==================
+Install LibreOffice
+https://www.libreoffice.org/download/download/
+
+Then customize these variables if you use Windows:
+
+(use-package doc-view
+ :custom
+ (doc-view-dvipdfm-program "mutool")
+ (doc-view-odf->pdf-converter-program "soffice")
+ (doc-view-odf->pdf-converter-function 'doc-view-odf->pdf-converter-soffice))
+
+Navigation
+
+Page Down\Up
+SPC\DEL forward\back
+M-<\M-> – beg. or end of doc
+M-g M-g or M-g g – go to page
+
+You can enlarge or shrink the document with + (doc-view-enlarge) and - (doc-view-shrink).
+
+To search C-s C-r
+New search C-u C-s C-r
+
+C-t shows tooltip
+
+Show a slice c m Mouse 1
+Use a bounding box c b
+c r cancels slice
+
+Cache
+
+For efficiency, DocView caches the images. The name of the directory where it caches images is given by the variable doc-view-cache-directory.
+
+On my system: Doc View Cache Directory:
+
+"c:/Users/red/AppData/Local/Temp/docview1001"
+
+In Linux: Doc View Cache Directory: /tmp/docview1000
+
+"C:\Users\red\AppData\Local\Temp"
+
+You can clear the cache directory by typing M-x doc-view-clear-cache
+
+(This sometimes also solves viewing problems.)
+
+To force reconversion of the currently viewed document, type r or g (revert-buffer).
+
+Customisations
+============
+doc-view-continuous nil
+doc-view-scale-internally t
+doc-view-resolution 110%
+pdf-view-display-size 'fit-page
+pdf-view-resize-factor 1.1
+pdf-view-use-scaling t
+pdf-virtual-global-minor-mode t
+doc-view-scale-internally nil
