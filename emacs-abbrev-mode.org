@@ -3,13 +3,19 @@
 #+created: [2021-04-09 Fri]
 #+last_modified: [2023-01-09 Mon]
 
-- Create and expand abbreviations to make your typing easier
-- Use yasnippet for code expansions or yankpad
-- But abbrev-mode can do almost anything you want
-  
-* One must generally have abbrev-mode activated to expand abbrevs
+* Introduction
 
+Create and expand abbreviations to make your typing easier
+
+Use yasnippet for code expansions or yankpad
+
+But abbrev-mode can do almost anything you want
+
+One must generally have abbrev-mode activated to expand abbrevs
+
+#+begin_src emacs-lisp
 (setq-default abbrev-mode t)
+#+end_src
 
 * Different kinds of abbrevs
 
@@ -17,12 +23,11 @@ Abbrevs can be *mode-specific*, which are active only in one major mode.
 
 e.g. can define abbrevs just for org-mode
 
-e.g. tle 
+e.g. tle
 
-#+title: 
-​#+roam_tags:
+​#+title:
 ​#+STARTUP: showall
-​#+OPTIONS: \\n:t" 
+​#+OPTIONS: \\n:t"
 
 Abbrevs can also have *global definitions* that are active in all major modes
 
@@ -51,7 +56,7 @@ Adds word/s before point
 hello C-x a g adds the word before point
 hello there C-u 2 C-x a g adds 2 words before point
 "Hello there Bob" (selected) C-u 0 C-x a g adds region (for this to work one must use mouse)
-#+end_example 
+#+end_example
 
 * To change the definition of an abbrev
 
@@ -74,7 +79,7 @@ Type it in buffer, hit space, OR any punctuation mark that does not form part of
 
 aristocracy
 
-Aristocracy 
+Aristocracy
 
 #+begin_example
 Ac1 expands to Aristocracy
@@ -91,7 +96,7 @@ ac1 C-q renders 'ac1' not 'aristocracy'
 
 * To REVERT an abbreviation M-x unexpand-abbrev
 
-ac1 
+ac1
 
 (global-set-key (kbd "C-x a u") 'unexpand-abbrev)
 
@@ -167,7 +172,7 @@ As an example type 'eg' and 'src'
 
 ​#+begin_src
 
-​#+end_src 
+​#+end_src
 
-If you find this channel helpful please consider supporting me via PayPal: 
+If you find this channel helpful please consider supporting me via PayPal:
 https://paypal.me/revrari
