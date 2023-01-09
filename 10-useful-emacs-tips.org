@@ -17,11 +17,13 @@ C-u w -- relative
 * Numbered lists org
 
 1) item 1
+
 2) item 2
 
 This text would interrupt the list and the next item would be 1) on a new list
 
 3) [@3] This will be item 3
+
 4) and this will be item 4
 
 * Flush lines
@@ -32,11 +34,17 @@ M-x flush-lines RET ^$ RET
 * Bind keys interactively
 
 M-x global-set-key
+
 Bind whatever key you want
+
 e.g. "C-c n f"  flush-lines
+
 C-x ESC ESC + C-a C-k C-g
+
 C-y -- yank the text from kill-ring
+
 (global-set-key "f" (quote flush-lines))
+
 (global-set-key "n" (quote flush-lines))
 
 * org export
@@ -50,6 +58,7 @@ or on a per file basis: ~OPTIONS: \n:t~
 * Set mark and go to last place
 
 C-SPC
+
 C-u C-SPC
 
 * Emacs: how to delete text without kill ring?
