@@ -1,5 +1,5 @@
 #+title: 10 Useful EMACS TIPS
-#+date: [2022-12-30 Fri]
+[2022-12-30 Fri]
 
 * Copy link dired
 
