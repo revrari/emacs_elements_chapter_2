@@ -1,4 +1,5 @@
 #+title: abbrev-mode
+#+STARTUP: showall
 #+created: [2021-04-09 Fri]
 #+last_modified: [2023-01-09 Mon]
 
@@ -19,9 +20,9 @@ e.g. can define abbrevs just for org-mode
 e.g. tle 
 
 #+title: 
-#+roam_tags:
-#+STARTUP: showall
-#+OPTIONS: \\n:t" 
+​#+roam_tags:
+​#+STARTUP: showall
+​#+OPTIONS: \\n:t" 
 
 Abbrevs can also have *global definitions* that are active in all major modes
 
@@ -122,6 +123,7 @@ This is called "Edit-Abbrev-Mode"
 - Set your default abbrev file--but there is no need to change defaults
 
 <abbrev-file-name>
+
 "~/.emacs.d/abbrev_defs"
 
 The set variable:
