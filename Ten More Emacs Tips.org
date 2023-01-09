@@ -1,0 +1,72 @@
+#+title: Ten More Emacs Tips
+#+OPTIONS: \n:t
+[2023-01-09 Mon]
+
+* Tip 1
+
+Delete empty directories in Dired\\
+You could just use the find tool.\\
+M-! find . -empty -type d -delete <RET>\\
+Then hit "g" for refresh.\\
+Here it is wrapped in a function that confirms the delete
+
+* Tip 2
+
+C-M l -- heuristic scrolling\\
+C-l -- current line becomes centre line\\
+Recentre Positions
+
+* Tip 3
+
+Minibuffer commands\\
+M-x dired\\
+Repeat commands: C-x Esc Esc
+
+* Tip 4
+
+To insert lines of a single character
+
+M-7 0
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+* Tip 5
+
+Change encoding system for a file
+
+C-x C-m f
+
+* Tip 6
+
+Cycle org lists
+
++ org-cycle-list-bullet\\
++ org-cycle-list-bullet\\
++ org-cycle-list-bullet
+
+* Tip 7
+
+Auto-expand without an external package\\
+One can use M-/ (dabbrev-expand)
+
+* Tip 8
+
+Cycle org-agenda files
+
+C-'
+
+* Tip 9
+
+Clone git repo or download source files
+
+Add a package manually:
+
+(add-to-list 'load-path "~/.emacs.d/packages/session")
+
+(require 'session)
+
+* Tip 10
+
+xah-make-backup
+
+http://xahlee.info/emacs/emacs/elisp_make-backup.html
