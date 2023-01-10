@@ -1,18 +1,3 @@
-red
-
-
-Table of Contents
-─────────────────
-
-1. consult-buffer
-2. consult-line
-3. consult-outline
-4. consult-imenu (narrowing)
-5. consult-grep/ripgrep
-6. consult-yank-pop
-7. Commands that boost one's use of the Emacs registry
-
-
 Consult – Key features and some tweaks
 *Note*
 I am using the default Consult Use-package example

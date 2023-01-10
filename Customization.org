@@ -3,14 +3,19 @@
 [2023-01-09 Mon]
 
 Emacs Manual p. 443-451.
+
 Emacs has many settings one can change.
+
 Most settings are customizable variables, which are also called user options.
+
 M-x customize creates a customization buffer (also known as the CUI)
+
 One can easily search this buffer, but note that this feature only finds groups and settings that are
 loaded in the current Emacs session.
+
 These are organised into customization groups
-If you are interested in customizing a particular setting or customization group, you can go straight
-there with these commands
+
+If you are interested in customizing a particular setting or customization group, you can go straight there with these commands
 
 *M-x customize-option*
 *M-x customize-face*
@@ -24,12 +29,19 @@ default values have changed since Emacs version /version/).
 customization buffers) *great*
 
 name of variable
+
 value
+
 customization state
+
 documentation for the variable = to C-h v
+
 customize for session (one can also use C-c C-c OR Apply)
+
 save for future sessions (one can also use C-x C-s OR Apply and Save)
+
 can restore by selecting "erase customization"
+
 one can add comments
 
 Customizations are saved usu. to *init.el* unless one specifies a customization file

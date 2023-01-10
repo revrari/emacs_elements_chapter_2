@@ -1,18 +1,6 @@
                          ━━━━━━━━━━━━━━━━━━━━━━
                           YOUR EMACS INIT FILE
-
-                                  red
                          ━━━━━━━━━━━━━━━━━━━━━━
-
-
-Table of Contents
-─────────────────
-
-1. Primary choices
-2. Secondary choices
-3. Important Question
-4. Summary
-
 
 [2023-01-09 Mon]
 
