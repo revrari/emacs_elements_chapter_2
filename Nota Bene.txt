@@ -2,7 +2,8 @@
 Notes for emacs-element video
 December 31, 2022
 
-They don’t advertise
+https://youtu.be/AB0d9GNLfsQ
+
 f1 help
 sample instructional files (Help Menu)
 3 tools: Word-Processor, Orbis, Ibidem

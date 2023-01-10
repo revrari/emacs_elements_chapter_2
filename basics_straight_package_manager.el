@@ -1,6 +1,8 @@
 ;; THE BASICS OF THE STRAIGHT PACKAGE MANAGER: VIDEO I
 ;; [2022-12-27 Tue]
 
+;; URL: https://youtu.be/UAMJeDgEiMw
+
 ;; An exciting cutting edge package manager
 ;; URL: https://github.com/raxod502/straight.el
 ;; Why Straight? With Straight one can:

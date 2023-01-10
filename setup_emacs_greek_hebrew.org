@@ -1,6 +1,9 @@
 #+title: How to set up Emacs to best type Greek and Hebrew – for dummies
 
+https://youtu.be/3o3XRkMYClY
+
 <set-frame-font "Dejavu Sans Mono 14" nil t>
+
 <set-frame-font "Dejavu Sans Mono 12" nil t>
 
 [2022-12-24 Sat]

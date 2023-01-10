@@ -3,7 +3,10 @@
 #+created: [2021-06-15 Tue]
 #+last_modified: [2021-06-15 Tue 04:08]
 
+https://youtu.be/S9GBKmtzjv8
+
 <set-frame-font "Dejavu Sans Mono 14" nil t>
+
 <set-frame-font "Dejavu Sans Mono 12" nil t>
 
 * Custom set variables:
@@ -64,55 +67,55 @@
 * Main commands
 
   C-x d -- invoke dired
+
   (global-set-key (kbd "<f5>") (lambda() (interactive)(find-file "~/")))
 
   S-+ -- create folder
-  
+
   m -- mark
-  
+
   t -- toggle // mark all
-  
+
   d -- delete
-  
+
   m + shift d -- delete
-  
+
   C -- copy
-  
+
   c -- compress
-  
+
   m -- move
-  
+
   S -- create a symbolic link (should say "to" not "from")
-  
+
   M - change mod spec (give example 777)
-  
+
   C -- compress
-  
+
   B -- Byte compile
-  
+
   %m -- mark files by regexp
-  
+
   m + S-r -- move files
-  
+
   z -- uncompress or compress
-  
+
   g -- refresh
-  
+
   ! -- runs a shell command on the file
-  
+
   U -- to unmark all
-  
+
   */ -- mark only directories
-  
+
   ~ -- marks all backup files for deletion
-  
+
   # -- marks all hash files for deletion
-  
+
   C-x C-q -- make a buffer editable
-  
+
   q -- quits a dired window
 
 * Reduce the number of buffers in dired:
 
   use /a/ rather than RET.
-

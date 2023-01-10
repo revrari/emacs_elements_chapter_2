@@ -3,6 +3,8 @@ The Ex Editor -- My early notes based on my ex videos for emacselements
 2022/06/25 08:05:27////////////
 ///////////////////////////////
 
+https://youtu.be/2wXbuXE-0yY
+
 An editor developed by Bill Joy in 1976.
 - To remove double spaces: g/ *// /g
 It was based on a program called EM,

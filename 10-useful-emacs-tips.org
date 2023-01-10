@@ -1,6 +1,8 @@
 #+title: 10 Useful EMACS TIPS
 [2022-12-30 Fri]
 
+https://youtu.be/7fhOPv3pAb0
+
 * Copy link dired
 
 C-0 w -- absolute path

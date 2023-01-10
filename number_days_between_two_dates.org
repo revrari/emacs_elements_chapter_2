@@ -1,6 +1,8 @@
 #+title: Work out the number of days between two dates in Emacs
 #+options: \n:t
 
+https://youtu.be/1-PKOIDjLB8
+
 7 Jan 2022, 08:59:20
 
 Work out the number of days between two dates in Emacs

@@ -2,6 +2,8 @@
 #+options: \n:t 
 <2022-12-10 Sat>
 
+https://youtu.be/dMpfYa3WQ78
+
 Install espeak
 
 Install Greader

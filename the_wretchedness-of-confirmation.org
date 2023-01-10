@@ -2,6 +2,8 @@
 [2022-12-27 Tue]
 #+OPTIONS: \n:t
 
+https://youtu.be/ZFJlxBPvzE0
+
 #+begin_src emacs-lisp
 (setq backup-directory-alist '(("." . "~/.config/emacs/backups")))
 (with-eval-after-load 'tramp

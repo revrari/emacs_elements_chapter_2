@@ -1,5 +1,8 @@
 Notes on the Ed Editor
-----------------------
+======================
+
+https://youtu.be/i8LxTm7071E
+
 Originally adapted from QED
 Easy to use, hard to learn
 Authors: D. M. Ritchie and K. L. Thompson

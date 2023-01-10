@@ -2,6 +2,8 @@
 #+OPTIONS: \n:t
 [2023-01-09 Mon]
 
+https://youtu.be/b0vguY3XuHQ
+
 * Tip 1
 
 Delete empty directories in Dired
