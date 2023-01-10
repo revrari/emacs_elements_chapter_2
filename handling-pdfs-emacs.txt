@@ -1,6 +1,8 @@
 Handling pdfs in Emacs: docview
 ===============================
 
+https://youtu.be/gayY_eJkK4E
+
 Why I do not use pdf-tools
 
 • Installation issues

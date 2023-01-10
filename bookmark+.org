@@ -2,6 +2,8 @@
 #+created: [2021-03-03 Wed]
 #+last_modified: [2023-01-04]
 
+https://youtu.be/L0v7HIukJMw
+
 Bookmark+ ENHANCES VANILLA EMACS BOOKMARKS IN MANY WAYS
 
 Program by Drew Adams, author of icicles, showkey, and dired+
@@ -9,6 +11,7 @@ Program by Drew Adams, author of icicles, showkey, and dired+
 * Bookmarks in Vanilla Emacs
 
 C-x-r-m
+
 C-x-r-l
 
 * Installation
@@ -87,4 +90,3 @@ Bookmark the Dired directory C-x r m
 * Documentation
 
 https://www.emacswiki.org/emacs/BookmarkPlus#h5o-51
-

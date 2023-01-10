@@ -1,6 +1,9 @@
 Consult – Key features and some tweaks
-*Note*
-I am using the default Consult Use-package example
+======================================
+
+https://youtu.be/HwBHBwYgs2g
+
+*Note* I am using the default Consult Use-package example
 
 <https://github.com/minad/consult#use-package-example>
 
