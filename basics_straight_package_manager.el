@@ -1,4 +1,4 @@
-;; The basics of the Straight Package Manager: Video I
+;; THE BASICS OF THE STRAIGHT PACKAGE MANAGER: VIDEO I
 ;; [2022-12-27 Tue]
 
 ;; An exciting cutting edge package manager

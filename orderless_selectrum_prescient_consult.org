@@ -5,11 +5,15 @@
 * Intro
 
 New Trend
+
 Individual packages that work together
 
 orderless - completion style spaces any order
+
 selectrum - offers vertical completion
+
 prescient - filters most recent completions to the top of the list
+
 consult - provides commands which allow one to quickly select an item from a list of candidates with completion
 
 * Install with straight
@@ -73,7 +77,9 @@ And these variables enhance speed and highlighting:
 * Examples
 
 =M-x emacs-init-time=
+
 f8 emacs diary
+
 C-x C-f captured
 
 * Customisations and features
@@ -87,11 +93,15 @@ C-x C-f captured
 Good with org-mode files
 
 Supported narrowing keys:
+
 b Buffers + space
+
 f Files + space
+
 m Bookmarks + space
 
 Turn off preview
+
 consult-preview-key nil
 
 for narrowing during completion
@@ -99,15 +109,21 @@ for narrowing during completion
 * Other features
 
 consult-grep # + #filter
+
 asynchronous
+
 consult-line
+
 consult-isearch
 
 * Assess
 
 Variable completion
+
 M-x
+
 Email
+
 Buffer creation
 
 https://www.reddit.com/r/emacs/comments/m9avdn/orderless_selectrum_prescient_and_consult_basic/

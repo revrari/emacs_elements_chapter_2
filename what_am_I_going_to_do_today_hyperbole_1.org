@@ -25,9 +25,13 @@ GNU Hyperbole is an efficient, programmable hypertextual information management 
 It is a suite that consists of five parts: 
 
 Buttons and Smart Keys,
+
 Contact and Text Finder,
+
 Screen Control,
+
 Hypertextual Outliner,
+
 Programming Library
 
 Hyperbole is an interesting program because it builds on one's existing knowledge of Emacs and so the more you know about Emacs the more you can do with it. In Hyperbole it's so simple that a beginner can benefit from it, but it also offers a wide array of features for advanced users. One of the lovely things about it is that it's a program that fades into the background and uses the invisible power of <(existing text)> in your emacs configuration and so you'll be working in emacs and utilising the power of hyperbole without even it being obvious that you are doing so because it works in the background and is unobtrusive. 
@@ -104,6 +108,7 @@ There are two important keys:
 # <(Hyperbole)>
 
 Hyperbole buttons can also link to any Info node
+
 The Action Key can navigate through the entire online Info manuals
 
 Let me encourage you to continue to watch the videos I produce on hyperbole. I am particularly excited about the second video I am going to be doing which is on the magic of hyperbole buttons. 

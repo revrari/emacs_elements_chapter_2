@@ -100,12 +100,19 @@ Type Shift-Control \ for Greek keyboard
 ἀδελφος
 
 Type < or > for breathings e.g. ἀδελφος
+
 ~ for circumflex ὑμῖν
+
 ' or ` for accents δὲ
+
 c for final sigma ὑμας
+
 " for diaresis
+
 Vertical bar | for iota subscript μόχθῳ
+
 ; for semi-colon
+
 ? for question mark
 
 * Type Shift-Control \ again for English keyboard
@@ -121,8 +128,11 @@ See this file for details about the Hebrew keyboard.
 * More options
 
 M-x list-input-methods
+
 M-x describe-input-method
+
 M-x toggle-input-method
+
 M-x set-input-method
 
 * To search for Greek and Hebrew characters in Emacs while ignoring diacritics
