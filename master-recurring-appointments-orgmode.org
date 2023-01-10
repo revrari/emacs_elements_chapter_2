@@ -2,65 +2,34 @@
 #+created: [2021-02-22 Mon]
 #+last_modified: [2023-01-10 Tue]
 #+STARTUP: showall
-
 t and 0 = every/any/all
-
 0 = can also means "Sunday"
-
-* Go to visit John SCHEDULED: [2021-02-22 Mon +1w]
-
+* Go to visit John 
+  SCHEDULED: [2021-02-22 Mon +1w]
 * Floats
-
 %%(diary-float 2 1 4) Visit John
-
 %%(diary-float 3 2 1) Visit John
-
 %%(diary-float 3 3 2) Visit John
-
 %%(diary-float(2 3 4 5 6 7 8 9 10 11) 2 3) 7pm Session Meeting
-
 %%(diary-float t 3 0) 7pm Small Groups
-
 %%(diary-float t 0 1) Holy Communion
-
-%%(diary-float t 1 -1) Pay mom on last Monday of every month
-
+%%(diary-float t 1 -1) Pay Mom on last Monday of every month
 * Blocks
-
 %%(and (diary-block 2 14 2021 2 24 2021)) Mondi works on window frames
-
 %%(diary-block 2 22 2021 2 26 2021) Take time off
-
 *OR*
-
 Mondi works on curtain frames <2021-02-22 Mon>-<2021-02-26 Fri>
-
 * Anniversaries
-
 %d - Specifies how many years have elapsed since the commencement of the specified date.
-
 %%(org-anniversary 2005 4 1) Raoul has been at Tygerberg for %d years
-
 %%(org-anniversary 1960 1 13) Tania Leonard is %d years old today (Birthday)
-
-%%(org-anniversary 2020 7 28) James Brown died on this day %d years ago
-
-%%(org-anniversary 2021 2 26) Johanita and Jason Conradie have been married for %d year(s)
-
-(Wedding Anniversary)
-
+%%(org-anniversary 2020 7 28) James Brown died on this day %d years ago (Death day)
+%%(org-anniversary 2021 2 26) Johanita and Jason Conradie have been married for %d year(s) (Wedding Anniversary)
 * Date
-
 %%(org-date t '(2 3 4) 22) Mow the lawn
-
 %%(org-date t 12 16) Pierre and Sonja's wedding anniversary
-
 %%(org-date t 2 23) Mom's birthday
-
 %%(org-date t 3 21) Human Rights Day
-
 * CYCLIC
-
 Cyclic diary entries repeat after a fixed interval of days.
-
 %%(diary-cyclic 7 2 25 2021) Take my vitaim "D" tablet
