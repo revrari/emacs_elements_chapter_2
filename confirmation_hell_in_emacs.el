@@ -4,7 +4,7 @@
 (setq backup-directory-alist '(("." . "~/.config/emacs/backups")))
 (with-eval-after-load 'tramp
 (add-to-list 'tramp-backup-directory-alist
-             (cons tramp-file-name-regexp nil)))
+	     (cons tramp-file-name-regexp nil)))
 
 (setq delete-old-versions -1)
 (setq version-control t)
@@ -30,7 +30,6 @@
 ;; I would thus like to kill the buffer immediately without saving any changes made to the buffer and without having to say yes or no or even y or n. I understand changes will be lost.
 
 (add-hook 'kill-buffer-query-functions
-          (lambda () (not-modified) t))
+	  (lambda () (not-modified) t))
 
 ;; https://emacs.stackexchange.com/questions/75113/never-prompt-me-again-with-the-words-buffer-modified?noredirect=1#comment122819_75113
-
