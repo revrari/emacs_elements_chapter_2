@@ -3,6 +3,8 @@
 #+ROAM_TAGS: rolo hyrolo emacs-elements deft org-roam
 #+date: <2021-04-29 Thu>
 
+https://youtu.be/hOuX2q9Re7A
+
 * Hyrolo
 
 {M-x emacs-init-time RET}

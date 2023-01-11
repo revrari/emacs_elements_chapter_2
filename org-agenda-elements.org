@@ -1,45 +1,33 @@
-#+title: The elements of Org Agenda
-#+DATE: [2022-12-24 Sat]
+#+title: The elements of org-agenda
+#+DATE: <2018-10-16 Tue>
 #+AUTHOR: Raoul Comninos
+#+EMAIL: revrari@mweb.co.za
+
+https://youtu.be/ZpSYIA2NxdE
 
 ​#+SEQ_TODO: TODO(t) | DONE(d) DEFERRED(f) CANCELLED(c@)
-
 ​# C-c C-t
-
 ​#+TAGS: PHONE (k) MEETING(m) WEDDING(i) STUDY(s) URGENT(u) LETTER(l) BUSINESS(b)
 ​# C-c C-q
 
 ​#+PRIORITIES: 1 4 2 3
-
-​# 1:Urgent and important (do it soon as possible)
-
-​# 2:Important not urgent (decide when to do it)
-
-​# 3:Urgent not important (delegate)
-
+​# 1:Urgent and important (do it soon as possible) /
+​# 2:Important not urgent (decide when to do it) /
+​# 3:Urgent not important (delegate) /
 ​# 4:Not urgent not important (dump it)
-
 ​# S-<up> S-<down>
 
 ​# S-M-RET to enter a new entry
-
 ​# Mark as completed C-c toggle
-
 ​# Inactive timestamps do not appear in Agenda View
-
 ​# Convert active to inactive: Put cursor on < or > and press S-up S-down
 
 ​#+OPTIONS: \n:t
-​
+
 ​#+STARTUP: showall
-
 ​#+STARTUP: overview
-
 ​#+STARTUP: content
-
 ​#+STARTUP: showeverything
-
-* Customisations
 
 #+begin_src emacs-lisp
 (global-set-key (kbd "<f6>") (lambda() (interactive)(find-file "~/org-agenda/main.org")))
@@ -58,4 +46,3 @@
 (setq org-agenda-skip-timestamp-if-done t)
 (setq org-agenda-start-on-weekday 0)
 #+end_src
-

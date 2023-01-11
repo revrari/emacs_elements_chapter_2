@@ -1,43 +1,30 @@
-#+title: Some ways to create files in Emacs
-[2022-12-24 Sat]
-#+OPTIONS: \n:t
+SOME WAYS TO CREATE FILES IN EMACS
+++++++++++++++++++++++++++++++++++
+Wed Jan 11 09:50:46 AM SAST 2023
+++++++++++++++++++++++++++++++++
+https://youtu.be/EkmWCeDqTss
+++++++++++++++++++++++++++++
+TWO GROUPS OF METHODS
 
-* TWO GROUPS OF METHODS
-
-** THOSE METHODS THAT create and open file for editing
-
+THOSE METHODS THAT CREATE AND OPEN A FILE FOR EDITING
+=====================================================
 C-x C-f – basic method
-
 Allows you to choose your path, create a file + open the newly created file for editing.
-
 C-x b
-
 [name-of-buffer]
-
 Find directory
-
 C-x C-w (this warns if a file of the same name exists)
-
 Chooses buffer name as file name on RET
 
-** Those methods that create the file and do not open it for editing
-
+THOSE METHODS THAT CREATE THE FILE AND DO NOT OPEN IT FOR EDITING
+=================================================================
 dired-create-empty-file
-
 Prompts for path + file-name, but does not open file for editing.
-
 M-! touch + the name of file – create a new file anywhere.
-
 Uses a relative path. I.e. the directory you are currently in.
-
 Does not prompt for a directory.
-
 This also works in the dired buffer.
-
 Also note: the files are not automatically opened after this
-
-For many creating multiple files use the terminal
-
-touch file1 file2 file3
+To create multiple files use the terminal: touch file1 file2 file3
 
 https://stackoverflow.com/questions/2592095/how-do-i-create-an-empty-file-in-emacs/2592558#2592558

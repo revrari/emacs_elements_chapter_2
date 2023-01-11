@@ -1,52 +1,33 @@
-#+title: DRINKING EMACS NEAT
-#+date: <2021-04-19 Mon>
-#+ROAM_TAGS: packages emacs zero experiment
-#+STARTUP: showall
-#+OPTIONS: \\n:t"
-
+DRINKING EMACS NEAT
+++++++++++++++++++++++++++++
+Wed Jan 11 11:10:53 AM SAST 2023
+packages emacs zero experiment
+++++++++++++++++++++++++++++++
 https://youtu.be/bLosYIcUmD8
-
+++++++++++++++++++++++++++++
 How to really speed up Emacs
-
 What is good about Emacs is Emacs -- Vanilla Emacs
-
 Parasytic packages.
-
 I do not install external packages until I am sure Vanilla Emacs cannot do the job.
-
 Removed all my external packages
-
 Customized Emacs the way I wanted it
-
 Sought Solutions to probelms I normally solve with packages
-
 - abbrev-mode
-  https://www.youtube.com/watch?v=2ONNXDlN3RU&ab_channel=Emacs-Elements
+  https://www.youtube.com/watch?v2ONNXDlN3RU&ab_channelEmacs-Elements
 - pdf-tools
-  https://www.youtube.com/watch?v=gauZzNETnKE&ab_channel=Emacs-Elements
-- [[id:2a519329-5a61-481c-8612-b310e12d359c][narrowing-solution]]
-- grep = lgrep and rgrep
-
+  https://www.youtube.com/watch?vgauZzNETnKE&ab_channelEmacs-Elements
+- grep  lgrep and rgrep
   grep -nH -e Mom ~/files/*.org --null
-
 - Backup of a file
-
   remember-mode
-
-  (define-key global-map (kbd "<f9> b") 'remember-finalize) formerly =remember-buffer=
-
+  (define-key global-map (kbd "<f9> b") 'remember-finalize) formerly remember-buffer
 - Electric pairs for org-markup
-
-  [[id:bb36758d-56f1-4da8-a89c-c2feb933acef][org solution]]
-
-  =C-c C-x C-f=
-
+  C-c C-x C-f
 - goto last place -- use mark
 - show the mark in Emacs
   https://youtu.be/iFTG4iAsrzE
 - show keystrokes in Emacs (Type C-h l, which invokes view-lossage.)
 - Open in external applications
-
 ;; OPEN FILES IN EXTERNAL APP (use S-! on the file to open)
 (setq dired-guess-shell-alist-user
    '(("\\.pdf$" "firefox")
@@ -64,7 +45,5 @@ Sought Solutions to probelms I normally solve with packages
      ("\\.mp3$" "audacious")
      ("\\.wav$" "audacious")
      ("\\.html$" "firefox")))
-
 Click on a completion to select it.
-
 In this buffer, type RET to select the completion near point.

@@ -1,14 +1,15 @@
 #+title: Hyperbole Video 1: Introduction - What am I going to do today?
 #+date: <2021-04-12 Mon>
-#+ROAM_TAGS: hyperbole emacs-elements
 #+STARTUP: showall
 #+OPTIONS: \\n:t"
+
+https://youtu.be/upwm6F2_F6Y
 
 An introduction to the package *Hyperbole* by Bob Weiner
 
 www.gnu.org/software/hyperbole
 
-https://drive.google.com/file/d/1OH6GvXgz1IlfxclqfNbBWXjsiRkKDUP6/view?usp=sharing
+https://drive.google.com/file/d/1OH6GvXgz1IlfxclqfNbBWXjsiRkKDUP6/view?uspsharing
 
 *What am I going to do today?* *WOW*
 
@@ -71,19 +72,19 @@ _Quelpa_
 					  :config '(require 'hyperbole)))
 #+end_src 
 
-To test that the program has been properly installed one would invoke =control h h= and you will see this easily accessible and unobtrusive menu appear in your mini buffer. On the left hand side we have the version number of hyperbole which is currently version 8.
+To test that the program has been properly installed one would invoke control h h and you will see this easily accessible and unobtrusive menu appear in your mini buffer. On the left hand side we have the version number of hyperbole which is currently version 8.
 
-=C-h h=
+C-h h
 
 *Note*
 
-=C-t= takes you to the top Hyperbole menu
+C-t takes you to the top Hyperbole menu
 
 Be aware of the Menu help
 
 Start with the DEMO
 
-=C-h h d d= (much like the Emacs Tutorial)
+C-h h d d (much like the Emacs Tutorial)
 
 There are two important keys:
 
@@ -97,13 +98,13 @@ There are two important keys:
    :bind* ("<M-return>" . hkey-either))
 #+end_src 
 
-=M-RET= Meta Return
+M-RET Meta Return
 
 <[My Github Page]>: github@revrari
 
 *Assist Key* -- shows help for Hyperbole buttons
 
-=C-u M-RET=
+C-u M-RET
 
 # <(Hyperbole)>
 

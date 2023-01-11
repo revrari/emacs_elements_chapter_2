@@ -1,0 +1,46 @@
+                     ______________________________
+
+                      HANDLING DOCX FILES IN EMACS
+                     ______________________________
+
+[2022-12-24 Sat]
+
+doc-view-mode
+
+install pandoc
+
+apt install docx2txt
+
+,----
+| (add-to-list 'auto-mode-alist '("\\.docx\\'" . docx2txt))
+| 
+| (defun docx2txt ()
+|  "Run docx2txt on the entire buffer."
+|  (shell-command-on-region (point-min) (point-max) "docx2txt" t t))
+| 
+| (provide 'docx2txt)
+`----
+
+,----
+| ;; ================================
+| ;; ;; CONVERT DOCX TO MARKDOWN
+| (defun dired-pandoc-docx-md ()
+|   (interactive)
+|   (dired-do-async-shell-command
+|    "pandoc -f docx -t markdown --wrap=none" current-prefix-arg
+|    (dired-get-marked-files t current-prefix-arg)))
+| ;; and to do the same with odt files
+| (defun dired-pandoc-odt-md ()
+|   (interactive)
+|   (dired-do-async-shell-command
+|    "pandoc -f odt -t markdown --wrap=none" current-prefix-arg
+|    (dired-get-marked-files t current-prefix-arg)))
+`----
+
+,----
+| (use-package ox-pandoc
+|   :ensure t
+|   :config
+|   (require 'ox-pandoc)
+|   )
+`----

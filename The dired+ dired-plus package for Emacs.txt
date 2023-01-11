@@ -1,0 +1,81 @@
+                    ________________________________
+
+                     DIRED+ (PACKAGE BY DREW ADAMS)
+                    ________________________________
+
+Turn on showkey-log-mode
+
+Installation
+
+<https://www.emacswiki.org/emacs/DiredPlus>
+
+Manually download dired+ to a folder in your .emacs.d folder
+
+<https://www.emacswiki.org/emacs/dired%2b.el>
+
+Then tell Emacs where to find the file:
+
+(add-to-list 'load-path "~/.emacs.d/dired+")
+
+Then, byte-compile-file
+
+(require 'dired+)
+
+Wraparound Navigation
+
+,----
+| ;; In vanilla Dired, `dired-next-marked-file' (`M-}' or `* C-n') and
+| ;; `dired-previous-marked-file' (`M-{' or `* C-p') wrap around when
+| ;; you get to the end or the beginning of the Dired buffer. Handy.
+| ;;
+| ;; But the other navigation commands do not wrap around. In `Dired+'
+| ;; they do, provided option `diredp-wrap-around-flag' is non-nil,
+| ;; which it is by default. This means the following commands:
+| ;;
+| ;; `diredp-next-line' - `n', `C-n', `down', `SPC'
+| ;; `diredp-previous-line' - `p', `C-p', `up'
+| ;; `diredp-next-dirline' - `>'
+| ;; `diredp-prev-dirline' - `<'
+| ;; `diredp-next-subdir' - `C-M-n'
+| ;; `diredp-prev-subdir' - `C-M-p'
+`----
+
+Some personal Dired+ customisation options
+
+,----
+| '(diredp-hide-details-initially-flag t)
+| 
+| '(diredp-wrap-around-flag nil)
+| 
+| font-lock-maximum-decoration
+| 
+`----
+
+Use customize-option to customise these
+
+One customised face
+
+`'(diredp-compressed-file-suffix ((t (:foreground "orange"))))'
+
+Use customize-face to customise this
+
+Note: you can customize a face to have the same appearance as face
+`default'
+
+If You Use Dired+ on MS Windows
+
+Dired+ loads library w32-browser.el if Emacs is running on Microsoft
+Windows, using it to extend Dired in a few ways.
+
+M-RET – Open a file in Windows in its default app
+
+C-RET – Open Windows Explorer on a file or folder
+
+^ - Get a list of drives on your computer (great!)
+
+`'(diredp-w32-local-drives '(("C:" "Local disk") ("E:" "Local disk")))'
+
+You will need w32-browser.el (which you need to put in your `load-path'
+and `require', if you want to use it.)
+
+<https://www.emacswiki.org/emacs/w32-browser.el>

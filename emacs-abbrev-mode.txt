@@ -1,11 +1,10 @@
-                             ━━━━━━━━━━━━━
-                              ABBREV-MODE
-                             ━━━━━━━━━━━━━
+                             _____________
 
-https://youtu.be/BI4ZBHGmFfY
+                              ABBREV-MODE
+
 
 1 Introduction
-══════════════
+==============
 
   Create and expand abbreviations to make your typing easier
 
@@ -15,13 +14,13 @@ https://youtu.be/BI4ZBHGmFfY
 
   One must generally have abbrev-mode activated to expand abbrevs
 
-  ┌────
-  │ (setq-default abbrev-mode t)
-  └────
+  ,----
+  | (setq-default abbrev-mode t)
+  `----
 
 
 2 Different kinds of abbrevs
-════════════════════════════
+============================
 
   Abbrevs can be *mode-specific*, which are active only in one major
   mode.
@@ -42,7 +41,7 @@ https://youtu.be/BI4ZBHGmFfY
 
 
 3 How to define abbrevs
-═══════════════════════
+=======================
 
   *Main way*
 
@@ -61,21 +60,21 @@ https://youtu.be/BI4ZBHGmFfY
 
   Adds word/s before point
 
-  ┌────
-  │ hello C-x a g adds the word before point
-  │ hello there C-u 2 C-x a g adds 2 words before point
-  │ "Hello there Bob" (selected) C-u 0 C-x a g adds region (for this to work one must use mouse)
-  └────
+  ,----
+  | hello C-x a g adds the word before point
+  | hello there C-u 2 C-x a g adds 2 words before point
+  | "Hello there Bob" (selected) C-u 0 C-x a g adds region (for this to work one must use mouse)
+  `----
 
 
 4 To change the definition of an abbrev
-═══════════════════════════════════════
+=======================================
 
   Just make a new definition
 
 
 5 To remove an abbrev definition, just give it a negative argument
-══════════════════════════════════════════════════════════════════
+==================================================================
 
   e.g. "ac1" "aristocracy"
 
@@ -84,7 +83,7 @@ https://youtu.be/BI4ZBHGmFfY
 
 
 6 How to expand an abbreviation
-═══════════════════════════════
+===============================
 
   aristocracy?
 
@@ -97,24 +96,24 @@ https://youtu.be/BI4ZBHGmFfY
 
   Aristocracy
 
-  ┌────
-  │ Ac1 expands to Aristocracy
-  │ ac1 expands to aristocracy
-  └────
+  ,----
+  | Ac1 expands to Aristocracy
+  | ac1 expands to aristocracy
+  `----
 
 
 7 To PREVENT an abbreviation type C-q after the abbreviation
-════════════════════════════════════════════════════════════
+============================================================
 
   ac1 is an abbreviation
 
-  ┌────
-  │ ac1 C-q renders 'ac1' not 'aristocracy'
-  └────
+  ,----
+  | ac1 C-q renders 'ac1' not 'aristocracy'
+  `----
 
 
 8 To REVERT an abbreviation M-x unexpand-abbrev
-═══════════════════════════════════════════════
+===============================================
 
   ac1
 
@@ -124,7 +123,7 @@ https://youtu.be/BI4ZBHGmFfY
 
 
 9 Examining Abbrevs
-═══════════════════
+===================
 
   list-abbrevs
 
@@ -143,7 +142,7 @@ https://youtu.be/BI4ZBHGmFfY
 
 
 10 To edit abbrevs
-══════════════════
+==================
 
   edit-abbrevs
 
@@ -152,9 +151,10 @@ https://youtu.be/BI4ZBHGmFfY
 
 
 11 Save abbrevs across sessions
-═══════════════════════════════
+===============================
 
-  • Set your default abbrev file–but there is no need to change defaults
+  - Set your default abbrev file--but there is no need to change
+    defaults
 
   <abbrev-file-name>
 
@@ -169,28 +169,28 @@ https://youtu.be/BI4ZBHGmFfY
 
 
 12 GREAT TWEAK
-══════════════
+==============
 
   Thanks to Tom:
 
   <https://stackoverflow.com/questions/15375759/how-to-control-cursor-placement-in-emacs-abbrev-expansion>
 
-  ┌────
-  │ ;; ABBREV-MODE
-  │  (defadvice expand-abbrev (after my-expand-abbrev activate)
-  │    ;; if there was an expansion
-  │    (if ad-return-value
-  │        ;; start idle timer to ensure insertion of abbrev activator
-  │        ;; character (e.g. space) is finished
-  │        (run-with-idle-timer 0 nil
-  │                             (lambda ()
-  │                               ;; if there is the string "@@" in the
-  │                               ;; expansion then move cursor there and
-  │                               ;; delete the string
-  │                               (let ((cursor "@@"))
-  │                                 (if (search-backward cursor last-abbrev-location t)
-  │                                     (delete-char (length cursor))))))))
-  └────
+  ,----
+  | ;; ABBREV-MODE
+  |  (defadvice expand-abbrev (after my-expand-abbrev activate)
+  |    ;; if there was an expansion
+  |    (if ad-return-value
+  |        ;; start idle timer to ensure insertion of abbrev activator
+  |        ;; character (e.g. space) is finished
+  |        (run-with-idle-timer 0 nil
+  |                             (lambda ()
+  |                               ;; if there is the string "@@" in the
+  |                               ;; expansion then move cursor there and
+  |                               ;; delete the string
+  |                               (let ((cursor "@@"))
+  |                                 (if (search-backward cursor last-abbrev-location t)
+  |                                     (delete-char (length cursor))))))))
+  `----
 
   As an example type 'eg' and 'src'
 

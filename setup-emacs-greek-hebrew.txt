@@ -1,57 +1,41 @@
-#+title: How to set up Emacs to best type Greek and Hebrew – for dummies
-
+HOW TO SET UP EMACS TO BEST TYPE GREEK AND HEBREW – FOR DUMMIES
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 https://youtu.be/3o3XRkMYClY
-
+++++++++++++++++++++++++++++
+Wed Jan 11 10:06:07 AM SAST 2023
 <set-frame-font "Dejavu Sans Mono 14" nil t>
-
 <set-frame-font "Dejavu Sans Mono 12" nil t>
 
-[2022-12-24 Sat]
-
-* GHB
-
-* The past
-
+The past
+++++++++++++++++++++
 It used to be the case that in order to type Greek and Hebrew properly one would require a specialised application such as Nota Bene for Scholars or Microsoft Word. Emacs has now evolved to the point where it can fulfil this role without too much loss of precision. It can also now accurately render (via copy and paste or through pandoc conversion) all documents with Greek and Hebrew previously created in these other applications.
 
-* Install the latest developmental version of Emacs
-
+Install the latest developmental version of Emacs
+++++++++++++++++++++
 It is very important for the correct display of Hebrew fonts that one works with the latest developmental version of Emacs. This version corrects an earlier bug which prevented Hebrew vowels and accents from displaying correctly.
-
 For more information:
 https://gnu.emacs.bug.narkive.com/ZPb1tNMY/bug-36171-25-1-emacs-displays-hebrew-text-incorrectly
 
-* Install Greek and Hebrew fonts
-
+Install Greek and Hebrew fonts
+++++++++++++++++++++
 To my mind, these are the best font options for Greek: Cardo, Gentium, SBL Greek
-
 Cardo can be installed in Debian using this command: sudo apt install cardo
-
 Gentium can be installed using this command: sudo apt install fonts-sil-gentium-basic
-
 These work best for Hebrew: Ezra SIL, SBL Hebrew
-
 This package can be installed in Debian using this command: sudo apt install fonts-sil-ezra
-
 SBL Hebrew must be downloaded from here:
-
 https://www.sbl-site.org/educational/biblicalfonts.aspx
 
-* Set up keyboard shortcuts to easily change from English to Greek or Hebrew
+Set up keyboard shortcuts to easily change from English to Greek or Hebrew
+++++++++++++++++++++
+Put the following code into your dot emacs file:
 
-Put the following code into your dot emacs file.
-
-English המלכים αδελφος
-
-#+begin_src emacs-lisp
 ;; Greek and Hebrew
 ;; To toggle English/Greek: S-C-|
 ;; To toggle English/Hebrew C-\
 ;; Describe-input-method
-
  ;;type hard break for Hebrew to English C-x 8 f
   (define-key 'iso-transl-ctl-x-8-map "f" [?‎])
-
   ;; Input method and key binding configuration.
   (setq alternative-input-methods
       '(("hebrew-biblical-sil" . [?\C-\\])
@@ -77,71 +61,47 @@ English המלכים αδελφος
                          (interactive "P\np")
                          (toggle-alternative-input-method ,method arg interactive))))));; Input method and key binding configuration.
 (reload-alternative-input-methods)
-#+end_src
 
-* Make sure Hebrew and Greek fonts appear on the screen slightly larger than English fonts
-
+Make sure Hebrew and Greek fonts appear on the screen slightly larger than English fonts
+++++++++++++++++++++
 This code especially helpful for typing Hebrew:
 
-#+begin_src emacs-lisp
 (set-fontset-font "fontset-default" 'greek (font-spec :family "Gentium" :size 25))
 (set-fontset-font "fontset-default" 'hebrew (font-spec :family "SBL Hebrew" :size 25))
-#+end_src
-
-Example: ἀδελφός Example:*שְׁמַע ישְׂרָאֶל*
 
 (Note that this will not make a change to the actual size of the fonts in the actual document, or when exported. This gives a purely visual increase of the font size.)
-
 You can adjust the size to suit your needs.
-
 https://emacs.stackexchange.com/questions/53755/increase-the-font-size-for-hebrew-text-in-emacs-but-leave-english-font-size-as-i/53757#53757
 
-* To type basic Greek using the input method allowed by the code above (greek-babel)
-
+To type basic Greek using the input method allowed by the code above (greek-babel)
+++++++++++++++++++++
 Type Shift-Control \ for Greek keyboard
-
-ἀδελφος
-
-Type < or > for breathings e.g. ἀδελφος
-
-~ for circumflex ὑμῖν
-
-' or ` for accents δὲ
-
-c for final sigma ὑμας
-
+Type < or > for breathings
+~ for circumflex
+' or ` for accents
+c for final sigma
 " for diaresis
-
-Vertical bar | for iota subscript μόχθῳ
-
+Vertical bar | for iota subscript
 ; for semi-colon
-
 ? for question mark
 
-* Type Shift-Control \ again for English keyboard
-
-To type Hebrew using the input method allowed by the code above (hebrew-biblical-sil)
-
-Type Control \ for Hebrew keyboard
-
 Type Shift-Control \ again for English keyboard
-
+++++++++++++++++++++
+To type Hebrew using the input method allowed by the code above (hebrew-biblical-sil)
+Type Control \ for Hebrew keyboard
+Type Shift-Control \ again for English keyboard
 See this file for details about the Hebrew keyboard.
 
-* More options
-
+More options
+++++++++++++++++++++
 M-x list-input-methods
-
 M-x describe-input-method
-
 M-x toggle-input-method
-
 M-x set-input-method
 
-* To search for Greek and Hebrew characters in Emacs while ignoring diacritics
-
+To search for Greek and Hebrew characters in Emacs while ignoring diacritics
+++++++++++++++++++++
 See the post below:
-
 https://emacs.stackexchange.com/questions/52936/searching-greek-and-hebrew-texts-in-emacs-with-isearch-while-ignoring-accents-an/52937#52937
+Email me: revrari@mweb.co.za
 
-Email me: [[Email me][revrari@mweb.co.za]]

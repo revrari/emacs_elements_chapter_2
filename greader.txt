@@ -1,18 +1,12 @@
-#+title: Greader and Espeak
-#+options: \n:t 
-<2022-12-10 Sat>
-
+GREADER AND ESPEAK
+++++++++++++++++++++
+Wed Jan 11 09:57:43 AM SAST 2023
+++++++++++++++++++++
 https://youtu.be/dMpfYa3WQ78
-
+++++++++++++++++++++
 Install espeak
-
 Install Greader
-
 (require 'greader)
-
 Activate greader-mode
-
 C-r <space>
-
 <space>
-

@@ -1,88 +1,70 @@
-#+title: 10 Useful EMACS TIPS
-[2022-12-30 Fri]
-
+10 Useful EMACS TIPS
+++++++++++++++++++++
+Wed Jan 11 08:25:34 AM SAST 2023
+++++++++++++++++++++
 https://youtu.be/7fhOPv3pAb0
+++++++++++++++++++++
 
-* Copy link dired
-
+1. Copy link dired
+===============
 C-0 w -- absolute path
-
-#+begin_example
 home/red/.bash_history
-#+end_example
-
 C-u w -- relative
-#+begin_example
 .bash_history
-#+end_example
 
-* Numbered lists org
-
+2. Numbered lists org
+===============
 1) item 1
-
 2) item 2
-
 This text would interrupt the list and the next item would be 1) on a new list
-
 3) [@3] This will be item 3
-
 4) and this will be item 4
 
-* Flush lines
-
+3. Flush lines
+===============
 M-x flush-lines RET ^$ RET
 ("C-c n f"   . flush-lines)
 
-* Bind keys interactively
-
+4. Bind keys interactively
+===============
 M-x global-set-key
-
 Bind whatever key you want
-
 e.g. "C-c n f"  flush-lines
-
 C-x ESC ESC + C-a C-k C-g
-
 C-y -- yank the text from kill-ring
-
 (global-set-key "f" (quote flush-lines))
-
 (global-set-key "n" (quote flush-lines))
+org export
 
-* org export
-
-preserve line breaks org export
-
+5. Preserve line breaks org export
+================
 org-export-preserve-breaks
+or on a per file basis: OPTIONS: \n:t
 
-or on a per file basis: ~OPTIONS: \n:t~
-
-* Set mark and go to last place
-
+6. Set mark and go to last place
+===============
 C-SPC
-
 C-u C-SPC
 
-* Emacs: how to delete text without kill ring?
-
+7. Emacs: how to delete text without kill ring?
+===============
 M-x delete-region
-
 C-d or DEL (Backspace)
 
-* Get rid of funny ^M characters in an Emacs file code encoding
-
+8. Get rid of funny ^M characters in an Emacs file code encoding
+===============
 One of the most straightforward ways of gettings rid of ^Ms with just an emacs command one-liner:
-
 C-x h C-u M-| dos2unix
 
-* Search the web
-
+9. Search the web
+===============
 M-s M-w
 
-* Dired Listing Switches
-
+10. Dired Listing Switches
+===============
 C-u s
-
 -alh by name
 -alt by date
 -lhS by size
+=====
+Finis

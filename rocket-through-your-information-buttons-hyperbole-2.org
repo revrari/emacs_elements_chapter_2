@@ -1,12 +1,13 @@
 #+title: Hyperbole 2: Buttons
 #+date: <2021-04-12 Mon>
-#+ROAM_TAGS: hyperbole emacs-elements buttons
 #+STARTUP: showall
 #+OPTIONS: \\n:t"
 
+https://youtu.be/MKwoMQYvXRA
+
 Today we are going to be looking at "Buttons" in the package Hyperbole by Bob Weiner:
 
-www.gnu.org/software/hyperbole
+https://www.gnu.org/software/hyperbole/
 
 Hyperbole offers the wonderful ability to create buttons in any buffer or in files of any kind that allow you to quickly navigate to places or execute actions.
 
