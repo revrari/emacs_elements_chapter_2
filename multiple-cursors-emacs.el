@@ -34,6 +34,7 @@
 
 ;; Multiple cursors
 ;; URL: https://github.com/magnars/multiple-cursors.el
+
 (require 'multiple-cursors)
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 (global-set-key (kbd "C-d") 'mc/mark-next-like-this)
