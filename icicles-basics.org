@@ -1,4 +1,5 @@
 #+title: The Emacs Icicles Package by Drew Adams: Basic Introduction
+[2023-01-12 Thu]
 #+STARTUP: showall
 
 * Icicles I – Installation and main idea
@@ -28,10 +29,10 @@ byte-compile libraries
 C-u 0 byte-recompile-directory
 
 #+begin_src emacs-lisp
-  (add-to-list 'load-path "~/.emacs.d/pack/icicles")
-  (require 'icicles)
-  (icy-mode 1)
-  (setq org-roam-completion-system 'default)
+(add-to-list 'load-path "~/.emacs.d/pack/icicles")
+(require 'icicles)
+(icy-mode 1)
+(setq org-roam-completion-system 'default)
 #+end_src
 
 - activate menu if disabled
@@ -53,22 +54,9 @@ C-u 0 byte-recompile-directory
 - <RET> to select candidate
 - Then we have shift-tab which gives us regexp completion.
 
-emacs
+emacs ^emacs emacs$ -emacs- ^pack.+nts Shift-alt-* orderless
 
-^emacs
-
-emacs$
-
--emacs-
-
-^pack.+nts
-
-Shift-alt-*
-
-orderless
-
-init
-emacs
+init emacs
 
 - We follow the same process but get different suggestions
 
@@ -93,3 +81,4 @@ e.g. type f1 and then shift-tab
 - opening files
 - M-x
 - C-h v
+  

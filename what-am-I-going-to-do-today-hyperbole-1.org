@@ -13,29 +13,17 @@ https://drive.google.com/file/d/1OH6GvXgz1IlfxclqfNbBWXjsiRkKDUP6/view?uspsharin
 
 *What am I going to do today?* *WOW*
 
-c:/rari/.hyperb/HYPB
-
-What am I going to do today?
-
-Today I am looking at a magical program called Hyperbole. What I am going to do today is giving you just a brief overview of the program, show you how you can install it, and talk briefly about some of it features. I will be doing some subsequent videos as well looking at the program and its features in more detail.
-
-Let me begin with a brief overview.
-
-GNU Hyperbole is an efficient, programmable hypertextual information management system. 
-
-It is a suite that consists of five parts: 
-
-Buttons and Smart Keys,
-
-Contact and Text Finder,
-
-Screen Control,
-
-Hypertextual Outliner,
-
-Programming Library
-
-Hyperbole is an interesting program because it builds on one's existing knowledge of Emacs and so the more you know about Emacs the more you can do with it. In Hyperbole it's so simple that a beginner can benefit from it, but it also offers a wide array of features for advanced users. One of the lovely things about it is that it's a program that fades into the background and uses the invisible power of <(existing text)> in your emacs configuration and so you'll be working in emacs and utilising the power of hyperbole without even it being obvious that you are doing so because it works in the background and is unobtrusive. 
+- c:/rari/.hyperb/HYPB
+- What am I going to do today?. Today I am looking at a magical program called Hyperbole. What I am going to do today is giving you just a brief overview of the program, show you how you can install it, and talk briefly about some of it features. I will be doing some subsequent videos as well looking at the program and its features in more detail.
+- Let me begin with a brief overview.
+- GNU Hyperbole is an efficient, programmable hypertextual information management system. 
+- It is a suite that consists of five parts: 
+  - Buttons and Smart Keys,
+  - Contact and Text Finder,
+  - Screen Control,
+  - Hypertextual Outliner,
+  - Programming Library
+- Hyperbole is an interesting program because it builds on one's existing knowledge of Emacs and so the more you know about Emacs the more you can do with it. In Hyperbole it's so simple that a beginner can benefit from it, but it also offers a wide array of features for advanced users. One of the lovely things about it is that it's a program that fades into the background and uses the invisible power of <(existing text)> in your emacs configuration and so you'll be working in emacs and utilising the power of hyperbole without even it being obvious that you are doing so because it works in the background and is unobtrusive. 
 
 *Version 8 release*
 
@@ -78,15 +66,11 @@ C-h h
 
 *Note*
 
-C-t takes you to the top Hyperbole menu
-
-Be aware of the Menu help
-
-Start with the DEMO
-
-C-h h d d (much like the Emacs Tutorial)
-
-There are two important keys:
+- C-t takes you to the top Hyperbole menu
+- Be aware of the Menu help
+- Start with the DEMO
+- C-h h d d (much like the Emacs Tutorial)
+- There are two important keys:
 
 *The Action Key*
 
@@ -108,14 +92,9 @@ C-u M-RET
 
 # <(Hyperbole)>
 
-Hyperbole buttons can also link to any Info node
-
-The Action Key can navigate through the entire online Info manuals
-
-Let me encourage you to continue to watch the videos I produce on hyperbole. I am particularly excited about the second video I am going to be doing which is on the magic of hyperbole buttons. 
-
-Hyperbole really does do things that no other program can do. It is <(MAGIC)> within Emacs.
-
-So be sure to catch that next video which hopefully will be released within a short time.
-
-"${hyperb:dir}/man/im"
+- Hyperbole buttons can also link to any Info node
+- The Action Key can navigate through the entire online Info manuals
+- Let me encourage you to continue to watch the videos I produce on hyperbole. I am particularly excited about the second video I am going to be doing which is on the magic of hyperbole buttons. 
+- Hyperbole really does do things that no other program can do. It is <(MAGIC)> within Emacs.
+- So be sure to catch that next video which hopefully will be released within a short time.
+- "${hyperb:dir}/man/im"

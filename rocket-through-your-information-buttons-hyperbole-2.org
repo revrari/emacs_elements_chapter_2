@@ -136,6 +136,7 @@ When you are not creating single line buttons, you can create Explicit Buttons w
 They can be created using the interactive Menu {C-h h e c}
 
 <(NEW Notes File)>
+
 "~/files/notes.txt:1"
 
 <(Gmail)>

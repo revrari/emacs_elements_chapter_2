@@ -14,7 +14,7 @@
 
 ;;     • Big, intimidating and powerful program
 ;;     • Completion frameworks: ido, ivy, icomplete, consult+selectrum
-;;     • Icicles enhances minibuffer completion
+;;     • &shot enhances minibuffer completion
 ;;     • So much info on it
 ;;     • Where to start?
 

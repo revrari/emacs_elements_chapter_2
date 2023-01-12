@@ -10,9 +10,11 @@ https://youtu.be/hOuX2q9Re7A
 {M-x emacs-init-time RET}
 
 <set-frame-font "Dejavu Sans Mono 14" nil t>
+
 <set-frame-font "Dejavu Sans Mono 12" nil t>
 
 {M-x org-display-inline-images RET}
+
 {M-x org-remove-inline-images RET}
 
 * What is HyRolo?
@@ -55,6 +57,7 @@ Open and explain the file
 		   PERSONAL ROLO (OPTIONAL HEADING)
 <Last-Name>, <First>  <Email>		W<Work#>	F<Fax#> (OPTIONAL TEXT -- MAKE SENSE)
 ==================================================================
+
 *  Smith, John		<js@hiho.com> W708-555-2001  F708-321-1492
 	Chief Ether Maintainer, HiHo Industries
 	05/24/2020
