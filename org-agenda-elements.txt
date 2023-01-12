@@ -1,0 +1,61 @@
+                      ____________________________
+
+                       THE ELEMENTS OF ORG-AGENDA
+
+                             Raoul Comninos
+                      ____________________________
+
+
+                            <2018-10-16 Tue>
+
+
+Table of Contents
+_________________
+
+
+
+
+<https://youtu.be/ZpSYIA2NxdE>
+
+​#+SEQ_TODO: TODO(t) | DONE(d) DEFERRED(f) CANCELLED(c@)
+​# C-c C-t
+​#+TAGS: PHONE (k) MEETING(m) WEDDING(i) STUDY(s) URGENT(u) LETTER(l)
+BUSINESS(b)
+​# C-c C-q
+
+​#+PRIORITIES: 1 4 2 3
+​# 1:Urgent and important (do it soon as possible) /
+​# 2:Important not urgent (decide when to do it) /
+​# 3:Urgent not important (delegate) /
+​# 4:Not urgent not important (dump it)
+​# S-<up> S-<down>
+
+​# S-M-RET to enter a new entry
+​# Mark as completed C-c toggle
+​# Inactive timestamps do not appear in Agenda View
+​# Convert active to inactive: Put cursor on < or > and press S-up S-down
+
+​#+OPTIONS: \n:t
+
+​#+STARTUP: showall
+​#+STARTUP: overview
+​#+STARTUP: content
+​#+STARTUP: showeverything
+
+,----
+| (global-set-key (kbd "<f6>") (lambda() (interactive)(find-file "~/org-agenda/main.org")))
+| 
+| (setq org-agenda-directory '("~/org_agenda"))
+| ;; C-c [ or ]
+| 
+| (global-set-key (kbd "C-c a") 'org-agenda)
+| (global-set-key [f5] (quote counsel-org-goto))
+| (global-set-key [f9] 'org-agenda-list)
+| (global-set-key [f7] 'org-tags-view)
+| 
+| (setq org-agenda-window-setup 'current-window)
+| (setq org-agenda-skip-deadline-if-done t)
+| (setq org-agenda-skip-scheduled-if-done t)
+| (setq org-agenda-skip-timestamp-if-done t)
+| (setq org-agenda-start-on-weekday 0)
+`----

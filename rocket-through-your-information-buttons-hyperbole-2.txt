@@ -1,0 +1,250 @@
+                         ______________________
+
+                          HYPERBOLE 2: BUTTONS
+
+                                  red
+                         ______________________
+
+
+                            <2021-04-12 Mon>
+
+
+Table of Contents
+_________________
+
+1. Implicit Buttons
+.. 1. Examples of URL implicit buttons:
+.. 2. Examples of file path implicit buttons:
+.. 3. Examples of key series:
+.. 4. Email buttons
+.. 5. <action buttons> - These turn Emacs function calls, or variables, into buttons
+2. Explicit Buttons
+3. Create a central location from where you do everything
+
+
+<https://youtu.be/MKwoMQYvXRA>
+
+Today we are going to be looking at "Buttons" in the package Hyperbole
+by Bob Weiner:
+
+<https://www.gnu.org/software/hyperbole/>
+
+Hyperbole offers the wonderful ability to create buttons in any buffer
+or in files of any kind that allow you to quickly navigate to places or
+execute actions.
+
+THIS IS A BUTTON: "~/Pictures/" THE BUTTON IS A METAPHOR
+
+It's a button because when you click on it, you *launch*
+something. *LIKE A ROCKET*
+
+There are two main types of buttons: Implicit, Explicit
+
+Implicit and Explicit buttons can also be used "globally" in which case
+they are called "Global Buttons". Such buttons are located this file:
+
+"/home/red/.hyperb/HYPB"
+
+OR,
+
+{C-h h b p} - Navigates to your personal button file of global buttons
+
+Global Buttons can be accessed from anywhere in Emacs, not only from a
+particular file or buffer.
+
+,----
+| wf
+`----
+
+
+1 Implicit Buttons
+==================
+
+  "Implicit buttons are text patterns recognized by context."
+
+
+1.1 Examples of URL implicit buttons:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  "<https://www.youtube.com/channel/UCe5excZqMeG1CIW-YhMTCEQ>" simple
+
+  ,----
+  | Copy to scratch
+  `----
+
+  <[Google Calendar]> "<https://calendar.google.com/calendar/u/0/r>:" a
+  button with a name
+
+  ,----
+  | Name the implicit button below
+  | With point on an implicit button, {C-h h i l} will label/name it.
+  `----
+
+  <[hyperbole-man]>
+  <https://www.gnu.org/software/hyperbole/man/hyperbole.html>
+
+  "<https://www.gnu.org/software/hyperbole/man/hyperbole.html#Buttons>"
+
+  One can use # hash to mark sections -- works with markdown/org files
+  as well
+
+
+1.2 Examples of file path implicit buttons:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  ,----
+  | "~/files/people.org:3:5" go to a line in a file
+  `----
+
+  #section links can also precede the :line:col numbers
+
+  *hyperbole understands relative paths*
+
+  "hyrolo.el"
+
+  "${HOME}\files"
+
+  "${data-directory}\NEWS"
+
+  Any variable that exists in your Emacs or Shell environment will work
+  there as well.
+
+
+1.3 Examples of key series:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  One can construct a series of keys, as one normally does in Emacs to
+  create a "key series"
+
+  {C-x b *scratch* RET} simple
+
+  <org-roam-find-file "emacs">
+
+  <[Customize UI]>: {M-x customize-group RET RET}
+
+  The Action Key activates any highlighted Emacs pushbuttons like those
+  in the Customization buffer as well.
+
+  {M-x hyperbole-web-search RET Google RET}
+
+  Note: Key series buttons are not limited to single key bindings; some
+  are more like keyboard macros that do a series of things:
+
+  ,----
+  | {C-x 1 C-h i d m hyperbole RET s Smart Keys RET C-x 2 C-h h d d}
+  `----
+
+  ,----
+  | <[Bookmarks]>: {C-x x e}
+  `----
+
+
+1.4 Email buttons
+~~~~~~~~~~~~~~~~~
+
+  ,----
+  | <[Email FSF]>: <info@fsf.org> email
+  `----
+
+
+1.5 <action buttons> - These turn Emacs function calls, or variables, into buttons
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  They are a generalised type of Implicit buttons
+
+  ,----
+  | <abbrev-file-name> value of a variable
+  | <menu-bar-mode 1>
+  | <menu-bar-mode 0>
+  | <tool-bar-mode 1>
+  | <tool-bar-mode 0>
+  | 
+  | <diary>
+  | <diary 2>
+  | 
+  | <hanoi 3>
+  `----
+
+  I use Emacs diary to organise my schedule. I can add links to files,
+  emails, etc. for record keeping purposes.
+
+  Go to one's github repository and even to a commit -- special features
+  built in for git users
+
+  <[My Github Page]>: github@revrari
+
+
+2 Explicit Buttons
+==================
+
+  Explicit and implicit buttons use the same set of action types, so
+  they can do similar things but you have great control of what you want
+  to do with explicit buttons whereas the context of an implicit button,
+  including its own text, determines what action it will perform.
+
+  When you are not creating single line buttons, you can create Explicit
+  Buttons which embed in the text. They are better to look at than
+  "Implicit Buttons".
+
+  They can be created using the interactive Menu {C-h h e c}
+
+  <(NEW Notes File)>
+  "~/files/notes.txt:1"
+
+  <(Gmail)>
+  <https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox>
+
+  Show metadata by invoking {C-h A}
+
+  They also provide greater control for creating links to specific
+  places:
+
+  ,----
+  | c:/rari/files/test-headings.org
+  `----
+
+  Create an explicit button here: {C-h h e c}
+
+  --->
+
+  This one cannot do in orgmode because to jump to a heading like this
+  in an orgmode file one /would need to be/ in an org file, whereas with
+  Hyperbole, it does not matter what kind of file one is in.
+
+  Org users may argue that there is org-minor-mode which allows you to
+  use org links/buttons outside of Org mode.  But you have to follow
+  Org's link syntax which lacks the visual flexibility that Hyperbole
+  has to blend your buttons into text naturally.  Plus, it is not a
+  global minor mode so it is not automatically enabled everywhere, so
+  you can't just activate buttons wherever you like.
+
+  Also, links in orgmode are not easy to do, but with Hyperbole, they
+  are made with ease. The great thing is that the file need not even be
+  an orgmode file.
+
+  I create links now in ALL my files!
+
+
+3 Create a central location from where you do everything
+========================================================
+
+  When you realise the power of implicit and explicit buttons you are
+  led to the creation of a hub. A hub is a place from where you can
+  launch all your activity.
+
+  - Navigate your files
+  - Browse the web
+  - Execute actions
+
+  Let me open up my button file where I have both implicit and explicit
+  buttons.
+
+  {C-h h b p}, to open up personal global button file
+
+  Any explicit or named implicit buttons in this file automatically
+  become global buttons, activated by name.
+
+  All the buttons in this file can in addition be accessed globally from
+  anywhere in Emacs
+
+  {C-h h g a}

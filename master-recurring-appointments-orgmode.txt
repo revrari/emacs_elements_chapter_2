@@ -1,0 +1,59 @@
+               __________________________________________
+
+                MASTER RECURRING APPOINTMENTS IN ORGMODE
+
+                                  red
+               __________________________________________
+
+
+Table of Contents
+_________________
+
+1. Go to visit John
+2. Floats
+3. Blocks
+.. 1. Mondi works on curtain frames <2021-02-22 Mon>-<2021-02-26 Fri>
+4. Anniversaries
+5. Date
+6. CYCLIC
+
+
+Wed Jan 11 04:15:27 PM SAST 2023
+<https://youtu.be/nw0kV-sMyKg>
+t and 0 = every/any/all
+0 = can also means "Sunday"
+
+
+1 Go to visit John
+==================
+
+
+2 Floats
+========
+
+
+3 Blocks
+========
+
+  *OR*
+
+
+3.1 Mondi works on curtain frames <2021-02-22 Mon>-<2021-02-26 Fri>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+4 Anniversaries
+===============
+
+  %d - Specifies how many years have elapsed since the commencement of
+   the specified date.
+
+
+5 Date
+======
+
+
+6 CYCLIC
+========
+
+  Cyclic diary entries repeat after a fixed interval of days.

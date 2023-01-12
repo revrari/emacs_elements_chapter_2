@@ -1,0 +1,24 @@
+#+title: automatic saving of modes, scratch buffer, and registers
+#+created: [2021-04-16 Fri]
+[2023-01-12 Thu]
+
+*Three automatic saving packages*
+
+#+begin_src
+;; REAL-AUTO-SAVE
+ (require 'real-auto-save)
+ (add-hook 'diary-mode-hook 'real-auto-save-mode)
+	;; (add-hook 'text-mode-hook 'real-auto-save-mode)
+	;; (add-hook 'prog-mode-hook 'real-auto-save-mode)
+
+;;; PERSISTENT-SCRATCH
+(persistent-scratch-setup-default)
+(setq initial-scratch-message "")
+
+;;; SESSION
+(require 'session)
+(add-hook 'after-init-hook 'session-initialize)
+(setq session-use-package t nil (session))
+
+(straight-use-package 'lorem-ipsum)
+#+end_src
