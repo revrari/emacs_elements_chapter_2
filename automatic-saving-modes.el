@@ -3,10 +3,10 @@
 ;; Thu 12 Jan 2023 08:18:18 SAST
 
 ;; REAL-AUTO-SAVE
- (require 'real-auto-save)
- (add-hook 'diary-mode-hook 'real-auto-save-mode)
-	;; (add-hook 'text-mode-hook 'real-auto-save-mode)
-	;; (add-hook 'prog-mode-hook 'real-auto-save-mode)
+(require 'real-auto-save)
+(add-hook 'diary-mode-hook 'real-auto-save-mode)
+(add-hook 'text-mode-hook 'real-auto-save-mode)
+(add-hook 'prog-mode-hook 'real-auto-save-mode)
 
 ;;; PERSISTENT-SCRATCH
 (persistent-scratch-setup-default)
