@@ -1,10 +1,7 @@
-#+title: automatic saving of modes, scratch buffer, and registers
-#+created: [2021-04-16 Fri]
-[2023-01-12 Thu]
+;; AUTOMATIC SAVING OF MODES, SCRATCH BUFFER, AND REGISTERS
+;; Three packages for automatic saving in Emacs
+;; Thu 12 Jan 2023 08:18:18 SAST
 
-*Three automatic saving packages*
-
-#+begin_src
 ;; REAL-AUTO-SAVE
  (require 'real-auto-save)
  (add-hook 'diary-mode-hook 'real-auto-save-mode)
@@ -20,5 +17,4 @@
 (add-hook 'after-init-hook 'session-initialize)
 (setq session-use-package t nil (session))
 
-(straight-use-package 'lorem-ipsum)
-#+end_src
+;; EXAMPLE: (straight-use-package 'lorem-ipsum)
